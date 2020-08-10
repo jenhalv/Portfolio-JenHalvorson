@@ -1,130 +1,33 @@
 .toolbar {
-  height: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
   display: flex;
-  align-items: center;
-  background-color:#003f56;
-  padding: 5px;
-}
-
-.welcome {
-  color: white;
-  font-size: 50px;
-}
-
-.lightbulb {
-  width: 60px;
-  padding: 5px;
-  display: flex;
-}
-.rwd-break {
-  display: none;
-}
-
-.toolbar_icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   width: 100%;
+  background-color:#003f56;
+  color: white;
+  align-items: center;
 }
 
-// MEDIA SETTINGS FOR ENTIRE SITE
-@media only screen and (max-width: 280px) {
-  .rwd-break {
-    display: center;
-  }
-  .welcome {
-      font-size: 20px;
-      margin-left: 20;
-      margin-right: 0;
-      align-items: left;
-      text-align: center;
-    }
-    .lightbulb {
-      width: 80px;
-    }
-  }
-
-@media only screen and (max-width: 490px) {
-  .rwd-break {
-    display: flex;
-  }
-  .welcome {
-      font-size: 20px;
-      margin-left: 0;
-      margin-right: 0;
-      align-items: left;
-      text-align: center;
-    }
-    .lightbulb {
-      width: 80px;
-    }
-  }
-
-
-@media screen and (max-width: 500px) {
-  .rwd-break {
-    display: block;
-  }
 .welcome {
-  font-size: 20px;
-  margin-left: 0;
-  margin-right: 0;
-  align-items: left;
-  text-align: center;
+  margin: 10px;
+
 }
 .lightbulb {
-  width: 80px;
-}
+  height: 60px;
+  margin-left: 5px;
 }
 
-@media only screen and (max-width: 600px) {
-  .rwd-break {
-    display: block;
-  }
+
+
+// MEDIA SETTINGS
+@media screen and (max-width: 520px) {
   .welcome {
-    font-size: 30px;
-    margin-left: 0;
-    margin-right: 0;
-    align-items: left;
-    text-align: center;
-  }
-  .lightbulb {
-    width: 80px;
-  }
+    margin: 5px;
+    }
+    .toolbar {
+    font-size:3vw;
 }
-
-@media only screen and (max-width: 992px) {
-  .rwd-break {
-    display: block;
-  }
-
-  .welcome {
-    font-size: 30px;
-    margin-left: 0;
-    margin-right: 0;
-    align-items: left;
-    text-align: center;
-  }
-  .lightbulb {
-    width: 80px;
-  }
 }
-
-@media only screen and (max-width: 1024px) {
-  .rwd-break {
-    display: block;
-  }
-
-  .welcome {
-    font-size: 30px;
-    margin-left: 0;
-    margin-right: 0;
-    align-items: left;
-    text-align: center;
-  }
-  .lightbulb {
-    width: 80px;
-  }
-}
-
-
