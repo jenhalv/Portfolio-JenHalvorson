@@ -1,0 +1,37 @@
+.intro-container {
+  margin: 70px 0px 0px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color:  #003f56;
+}
+
+//Title of listed experience
+.mat-card-title {
+  font-weight: bold;
+}
+
+//List of experience
+ul {
+  list-style: none;
+  padding: 0px 15px 0px 15px;
+
+}
+
+//Colored Checkmarks
+ul li:before {
+  content: '✓';
+  color: #08c3d5;
+  padding-right: 5px;
+}
+
+//Photo of Jennifer
+.img {
+  max-width: 225px;
+  max-height: 225px;
+  padding: 2em;
+}
+
+// MEDIA SETTINGS
+

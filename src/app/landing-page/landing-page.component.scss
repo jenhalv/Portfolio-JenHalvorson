@@ -1,3 +1,8 @@
+
+.slider {
+
+}
+
 .highlight-card {
   background-color:blue;
   color: white;
@@ -5,20 +10,17 @@
   width: auto;
   position: relative;
   height: 65px;
-  display: flex;
   align-items: center;
 }
 
 .card.card.highlight-card span {
   position: relative;
-  display: flex;
 }
 
 .title {
   color: white;
   font-weight: bold;
   font-size: 60px;
-  display: flex;
   @media only screen and (max-width: 600px) {
     font-size: 20px;
     align-items: center;

@@ -1,18 +1,7 @@
 :host {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-
-
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
   }
 
   p {
@@ -21,17 +10,12 @@
 
 
   .toolbar_icons {
-    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
   }
 
   .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
     flex-direction: column;
     align-items: center;
   }
@@ -41,19 +25,14 @@
     width: auto;
   }
 
-  svg.material-icons:not(:last-child) {
-    margin-right: 8px;
-  }
 
   .card svg.material-icons path {
     fill: #888;
   }
 
   .card-container {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 16px;
   }
 
   .card {
@@ -62,19 +41,14 @@
     background-color: #fafafa;
     height: 40px;
     width: 200px;
-    margin: 0 8px 16px;
     padding: 16px;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
     line-height: 24px;
   }
 
-  .card-container .card:not(:last-child) {
-    margin-right: 0;
-  }
+
 
   .card.card-small {
     height: 16px;
