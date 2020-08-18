@@ -13,6 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
 import { NgImageSliderModule } from 'ng-image-slider';
+import { GalleryModule } from '@ngx-gallery/core';
+import { CarouselComponent } from './landing-page/carousel/carousel.component';
+import { ImageSliderComponent } from './image-slider/image-slider.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     LandingPageComponent,
     ContactMeComponent,
     DescriptionComponent,
+    CarouselComponent,
+    ImageSliderComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +35,9 @@ import { NgImageSliderModule } from 'ng-image-slider';
     BrowserAnimationsModule,
     FormsModule,
     NgImageSliderModule,
+    GalleryModule.withConfig({
+      loadingMode: 'indeterminate'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent

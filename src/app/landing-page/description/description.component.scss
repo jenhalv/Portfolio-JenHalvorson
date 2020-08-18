@@ -1,16 +1,51 @@
 .intro-container {
-  margin: 70px 0px 0px 0px;
+  margin: 80px 0px 0px 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
   flex-wrap: wrap;
-  color:  #003f56;
+  color:  #1a2d42;
 }
 
-//Title of listed experience
-.mat-card-title {
-  font-weight: bold;
+.experience-container {
+  width: 400px;
+  font-family: 'Rancho';
+  font-size: 26px;
+  color: #eeeeee;
+  background-color:#1a2d42;
+  text-align: left;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  border-style: solid;
 }
+
+.experience_title {
+  font-size: 35px;
+}
+
+.frontend-container {
+  width: 400px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.list_icons {
+  border: 2px solid  #60697a;
+  padding: 2px;
+}
+
+.rwd-break {
+  display: none;
+}
+
+.icon {
+  width: 70px;
+  padding: 3px;
+}
+
 
 //List of experience
 ul {
@@ -28,10 +63,21 @@ ul li:before {
 
 //Photo of Jennifer
 .img {
-  max-width: 225px;
-  max-height: 225px;
-  padding: 2em;
+  max-width: 230px;
+  max-height: 230px;
+  padding: 2px;
+  border: 5px solid  #003f56;
+  margin: 10px 0px 10px 0px;
 }
 
 // MEDIA SETTINGS
-
+@media screen and (max-width: 360px) {
+.rwd-break {
+    display: block;
+}
+}
+@media screen and (max-width: 530px) {
+.experience-container {
+    font-size: 7vw;
+}
+}
