@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
-import { Routes, RouterModule, ROUTES } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -45,13 +44,6 @@ import { EducationComponent } from './about/education/education.component';
     BrowserAnimationsModule,
     FormsModule,
     NgImageSliderModule,
-    RouterModule.forRoot([
-        { path: '', component: AppComponent },
-        { path: 'education', component: EducationComponent },
-        { path: 'work', component: WorkComponent },
-        { path: 'skills', component: SkillsComponent },
-        {path: '**', component: AppComponent}
-       ]),
     GalleryModule.withConfig({
       loadingMode: 'indeterminate'
     }),
