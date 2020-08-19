@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
+import { Routes, RouterModule, ROUTES } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import { EducationComponent } from './education/education.component';
+
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MatCardModule } from '@angular/material/card';
 import { ContactMeComponent } from './contact-me/contact-me.component';
@@ -16,18 +17,27 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { GalleryModule } from '@ngx-gallery/core';
 import { CarouselComponent } from './landing-page/carousel/carousel.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
+import { MenuButtonComponent } from './toolbar/menu-button/menu-button.component';
+import { AboutComponent } from './about/about.component';
+import { WorkComponent } from './about/work/work.component';
+import { SkillsComponent } from './about/skills/skills.component';
+import { EducationComponent } from './about/education/education.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     ToolbarComponent,
-    EducationComponent,
     LandingPageComponent,
     ContactMeComponent,
     DescriptionComponent,
     CarouselComponent,
     ImageSliderComponent,
+    MenuButtonComponent,
+    AboutComponent,
+    WorkComponent,
+    SkillsComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
@@ -35,10 +45,18 @@ import { ImageSliderComponent } from './image-slider/image-slider.component';
     BrowserAnimationsModule,
     FormsModule,
     NgImageSliderModule,
+    RouterModule.forRoot([
+        { path: '', component: AppComponent },
+        { path: 'education', component: EducationComponent },
+        { path: 'work', component: WorkComponent },
+        { path: 'skills', component: SkillsComponent },
+        {path: '**', component: AppComponent}
+       ]),
     GalleryModule.withConfig({
       loadingMode: 'indeterminate'
     }),
   ],
+
   providers: [],
   bootstrap: [AppComponent
   ],

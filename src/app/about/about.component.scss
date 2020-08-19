@@ -1,0 +1,36 @@
+.about-container {
+  margin: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: #b7a8a1;
+  padding: 5px;
+  border: #1a2d42 3px;
+  border-style: solid;
+}
+
+a:hover {
+  cursor: pointer;
+  background-color: #85f4ff;
+  color: #1a2d42;
+}
+
+.description {
+  width: 145px;
+  margin: 5px;
+  font-size: large;
+  color: white;
+  border: #1a2d42 1px;
+  border-style: solid;
+  text-align: center;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  background-color: #60697a;
+  padding: 3px;
+}
+
+.about-icons {
+  width: 50px;
+
+}
