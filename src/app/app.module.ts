@@ -21,6 +21,7 @@ import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './about/work/work.component';
 import { SkillsComponent } from './about/skills/skills.component';
 import { EducationComponent } from './about/education/education.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { EducationComponent } from './about/education/education.component';
     BrowserAnimationsModule,
     FormsModule,
     NgImageSliderModule,
+    RouterModule,
     GalleryModule.withConfig({
       loadingMode: 'indeterminate'
     }),
