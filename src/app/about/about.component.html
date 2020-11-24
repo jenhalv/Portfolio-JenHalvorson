@@ -1,20 +1,16 @@
 <div class="about-container">
 
-<a class="description">
-  <div><img class="about-icons" appLazyLoad_save alt="graduation cap" src="../../../assets/education-icons/Cap.png"></div>
-    <div (click)="navToEducation()">Education</div>
-  </a>
+<mat-card (click)="navToEducation()">
+  <img class="about-icons" alt="education" src="../../../assets/education-icons/Cap.png">
+    Education
+</mat-card>
 
-<a class="description">
-  <div><img class="about-icons" appLazyLoad_save alt="employment" src="../../../assets/personal-photos/Resume.png"></div>
-  <div (click)="navToWork()">Employment</div>
-</a>
+<mat-card (click)="navToEmployment()">
+  <img class="about-icons" alt="employment" src="../../../assets/personal-photos/Resume.png">
+    Employment
+</mat-card>
 
-<a class="description">
-  <div><img class="about-icons" appLazyLoad_save alt="skills" src="../../../assets/experience-icons/Computer.png"></div>
-  <div (click)="navToSkills()">Skills</div>
-</a>
-
-</div>
-<app-education></app-education>
-
+<mat-card (click)="navToSkills()">
+  <img class="about-icons" appLazyLoad_save alt="skills" src="../../../assets/experience-icons/Computer.png">
+  Skills
+</mat-card>

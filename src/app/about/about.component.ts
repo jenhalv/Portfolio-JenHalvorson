@@ -1,9 +1,5 @@
-import { Component, OnInit, NgModule } from '@angular/core';
-import { EducationComponent } from './education/education.component';
-import { WorkComponent } from './work/work.component';
-import { SkillsComponent } from './skills/skills.component';
-
-import { Routes, RouterModule } from '@angular/router'; // CLI imports router
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -12,24 +8,23 @@ import { Routes, RouterModule } from '@angular/router'; // CLI imports router
 })
 
 export class AboutComponent implements OnInit {
-  router: any;
 
-  constructor() { }
+  constructor() {}
+
 
   ngOnInit(): void {
   }
 
-  navToEducation() {
-    this.router.navigate(['about/education']);
+  navToEducation(): void {
+    this.router.navigate(['about', 'education']);
   }
 
-
-  navToWork() {
-    this.router.navigate(['work']);
+  navToEmployment(): void {
+    this.router.navigate(['about', 'employment']);
   }
 
-  navToSkills() {
-    this.router.navigate(['skills']);
+  navToSkills(): void {
+    this.router.navigate(['about', 'skills']);
   }
 
 }

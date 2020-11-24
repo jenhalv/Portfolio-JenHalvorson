@@ -11,6 +11,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { DescriptionComponent } from './landing-page/description/description.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 import { NgImageSliderModule } from 'ng-image-slider';
 import { GalleryModule } from '@ngx-gallery/core';
@@ -18,10 +19,10 @@ import { CarouselComponent } from './landing-page/carousel/carousel.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { MenuButtonComponent } from './toolbar/menu-button/menu-button.component';
 import { AboutComponent } from './about/about.component';
-import { WorkComponent } from './about/work/work.component';
+
 import { SkillsComponent } from './about/skills/skills.component';
 import { EducationComponent } from './about/education/education.component';
-import { RouterModule } from '@angular/router';
+import { EmploymentComponent } from './about/employment/employment.component';
 
 @NgModule({
   declarations: [
@@ -35,9 +36,9 @@ import { RouterModule } from '@angular/router';
     ImageSliderComponent,
     MenuButtonComponent,
     AboutComponent,
-    WorkComponent,
+    EmploymentComponent,
     SkillsComponent,
-    EducationComponent
+    EducationComponent,
   ],
   imports: [
     BrowserModule,
