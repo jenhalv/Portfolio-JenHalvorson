@@ -1,5 +1,4 @@
 .intro-container {
-  margin: 80px 2px 25px 2px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -8,46 +7,30 @@
   color:  #1a2d42;
 }
 
+img {
+  width: 230px;
+  transform: scaleX(-1);
+  padding: 2px;
+  border: 5px solid  #003f56;
+  margin: 10px 2px 10px 2px;
+  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
 mat-card {
-  width: 400px;
+  width: 290px;
   font-family: 'Rancho';
   font-size: 26px;
   color: #eeeeee;
   background-color:#1a2d42;
   text-align: left;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-  border-style: solid;
+  border: 5px solid white;
+  margin: 10px 2px 10px 2px;
+  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 mat-card-title {
   font-size: 35px;
 }
-
-.frontend-container {
-  width: 400px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 26px;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-  background-color: whitesmoke;
-  border-style: solid;
-}
-
-.list_icons {
-  border: 2px solid  #60697a;
-  padding: 2px;
-}
-
-.rwd-break {
-  display: none;
-}
-
-.icon {
-  width: 70px;
-  padding: 3px;
-}
-
 
 //List of experience
 ul {
@@ -63,45 +46,32 @@ ul li:before {
   padding-right: 5px;
 }
 
-a:hover {
-  cursor: pointer;
-  background-color: #85f4ff;
-  transition: background-color 2s, color 500ms, font-size 500ms linear;
-  color: #1a2d42;
-}
+// .frontend-container {
+//   width: 400px;
+//   font-family: 'Courier New', Courier, monospace;
+//   font-size: 26px;
+//   font-weight: bold;
+//   text-align: center;
+//   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+//   background-color: whitesmoke;
+//   border-style: solid;
+// }
 
-.description {
-  width: 125px;
-  margin: 5px;
-  font-size: large;
-  color: white;
-  border: #1a2d42 1px;
-  border-style: solid;
-  text-align: center;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-  background-color: #60697a;
-  padding: 3px;
-}
+// .list_icons {
+//   border: 2px solid  #60697a;
+//   padding: 2px;
+// }
+
+// .rwd-break {
+//   display: none;
+// }
+
+// .icon {
+//   width: 70px;
+//   padding: 3px;
+// }
 
 .about-icons {
   width: 100px;
 
 }
-
-//Photo of Jennifer
-.img {
-  max-width: 230px;
-  max-height: 230px;
-  padding: 2px;
-  border: 5px solid  #003f56;
-  margin: 10px 2px 10px 2px;
-  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
-}
-
-// MEDIA SETTINGS
-@media screen and (max-width: 360px) {
-.rwd-break {
-    display: block;
-}
-}
-

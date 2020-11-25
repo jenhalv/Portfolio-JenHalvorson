@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 
 export class AboutComponent implements OnInit {
+  router: any;
 
   constructor() {}
 
@@ -23,7 +24,7 @@ export class AboutComponent implements OnInit {
     this.router.navigate(['about', 'employment']);
   }
 
-  navToSkills(): void {
+  navToProjects(): void {
     this.router.navigate(['about', 'skills']);
   }
 

@@ -1,20 +1,4 @@
-.about-container {
-  margin: 25px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
-  background-color: #b7a8a1;
-  padding: 5px;
-  border: #1a2d42 3px;
-  border-style: solid;
-}
-
-mat-card:hover {
-  cursor: pointer;
-  background-color: #85f4ff;
-  transition: background-color 2s, color 500ms, font-size 500ms linear;
+mat-card-container {
   color: #1a2d42;
 }
 
@@ -22,13 +6,19 @@ mat-card {
   width: 125px;
   margin: 5px;
   font-size: large;
-  color: white;
-  border: #1a2d42 1px;
-  border-style: solid;
+  color: #1a2d42;
+  border: #1a2d42 1px solid;
   text-align: center;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-  background-color: #60697a;
+  background-color: white;
   padding: 3px;
+}
+
+mat-card:hover {
+  cursor: pointer;
+  background-color: #d0d0d0;
+  transition: background-color 2s, color 500ms, font-size 500ms linear;
+  color: #1a2d42;
 }
 
 .about-icons {
