@@ -17,3 +17,10 @@ img {
   margin: 15px;
   border: 3px solid white;
 }
+
+a:hover {
+  cursor: pointer;
+  background-color: #85f4ff;
+  transition: background-color 2s, color 500ms, font-size 500ms linear;
+  color: #1a2d42;
+}

@@ -1,45 +1,39 @@
-.intro-container {
+mat-card-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  text-align: center;
+  align-content: center;
   flex-wrap: wrap;
-  color:  #1a2d42;
-  margin-top: 10px;
-}
-
-.personal_pic {
-  width: 270px;
-  height: 100%;
-  transform: scaleX(-1);
-  margin: 10px;
-  padding: 2px;
-  border: 5px solid #1a2d42;
-  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 5px;
 }
 
 mat-card {
-  width: 270px;
-  height: 100%;
+  width: 330px;
   margin: 10px;
-  font-family: 'Rancho';
-  font-size: 26px;
   color: #eeeeee;
   background-color:#1a2d42;
-  text-align: left;
   border: 5px solid white;
+  border-radius: 0px;
   box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-mat-card-title {
+.experience-title {
   font-size: 35px;
+  text-align: left;
+  font-family: 'Rancho';
+  margin-bottom: 0px;
 }
 
 //List of experience
 ul {
   list-style: none;
   padding-left: 10px;
-
+  text-align: left;
+  font-family: 'Rancho';
+  font-size: 26px;
+  margin: 0px;
 }
 
 //Colored Checkmarks
@@ -49,18 +43,21 @@ ul li:before {
   padding-right: 5px;
 }
 
-.frontend-container {
-  width: 330px;
-  text-align: center;
+.personal-pic {
+  margin: 10px;
+  width: 216px;
+  height: 100%;
+  border: 5px solid white;
+  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-.title {
+.frontend-title {
   font-family: 'Courier New', Courier, monospace;
   font-size: 25px;
   font-weight: bold;
 }
 
-.list_icons {
+.list-icons {
   height: 100%;
 }
 

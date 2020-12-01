@@ -1,5 +1,15 @@
 mat-card-container {
+  margin: 25px;
+  display: flex;
   color: #1a2d42;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 5px;
+  border: #1a2d42 3px;
+  border-style: solid;
 }
 
 mat-card {
@@ -23,5 +33,4 @@ mat-card:hover {
 
 .about-icons {
   width: 100px;
-
 }
