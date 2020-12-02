@@ -1,12 +1,14 @@
 mat-card-container {
   display: flex;
+  max-width: 1050px;
+  margin: auto;
+  margin-top: 10px;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   align-content: center;
   flex-wrap: wrap;
   background-color: white;
-  padding: 5px;
 }
 
 mat-card {
@@ -45,7 +47,7 @@ ul li:before {
 
 .personal-pic {
   margin: 10px;
-  width: 216px;
+  width: 217px;
   height: 100%;
   border: 5px solid white;
   box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);

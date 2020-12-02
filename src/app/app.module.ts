@@ -23,6 +23,7 @@ import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './about/skills/skills.component';
 import { EducationComponent } from './about/education/education.component';
 import { EmploymentComponent } from './about/employment/employment.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { EmploymentComponent } from './about/employment/employment.component';
     GalleryModule.withConfig({
       loadingMode: 'indeterminate'
     }),
+    AppRoutingModule,
   ],
 
   providers: [],

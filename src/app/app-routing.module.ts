@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { EducationComponent } from './about/education/education.component';
 import { EmploymentComponent } from './about/employment/employment.component';
@@ -7,14 +8,14 @@ import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { AppComponent } from './app.component';
 
-const Routes: Routes = [
+const routes: Routes = [
   {
     path: 'education',
     component: EducationComponent ,
-    data: {
-      backLabel: 'Jen\'s Home Page',
-      showBackButton: true
-    }
+    // data: {
+    //   backLabel: 'Jen\'s Home Page',
+    //   showBackButton: true
+    // }
   },
   {
     path: 'employment',
@@ -44,13 +45,10 @@ const Routes: Routes = [
 ];
 
 @NgModule({
-  imports:
-  [RouterModule,
-  EducationComponent,
-  EmploymentComponent,
-  SkillsComponent,
-  LoginComponent,
-  AboutComponent ],
+  declarations: [],
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

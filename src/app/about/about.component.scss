@@ -1,13 +1,15 @@
 mat-card-container {
-  margin: 25px;
   display: flex;
   color: #1a2d42;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
   background-color: white;
-  padding: 5px;
   border: #1a2d42 3px;
   border-style: solid;
 }
