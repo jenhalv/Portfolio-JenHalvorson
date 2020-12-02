@@ -7,6 +7,7 @@ import { SkillsComponent } from './about/skills/skills.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { AppComponent } from './app.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
   {
@@ -35,7 +36,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: AppComponent,
+    component: LandingPageComponent,
     data: {
       backUrl: '/',
       backLabel: 'Jen\'s Home Page',
