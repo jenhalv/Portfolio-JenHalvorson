@@ -3,7 +3,7 @@ footer {
   color: white;
   background-color:  #1a2d42;
   padding: 0 20px;
-  min-height: 70px;
+  // min-height: 70px;
 }
 
 img {
@@ -13,12 +13,11 @@ img {
   height: 30px;
   width: 30px;
   margin: 15px;
-  border: 3px solid white;
+  border: 2px solid white;
 }
 
 a:hover {
   cursor: pointer;
-  background-color: #85f4ff;
-  transition: background-color 2s, color 500ms, font-size 500ms linear;
-  color: #1a2d42;
+  // background-color: #85f4ff;
+  // transition: background-color 2s, color 500ms, font-size 500ms linear;
 }

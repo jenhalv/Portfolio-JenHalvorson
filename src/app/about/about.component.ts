@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -8,24 +7,9 @@ import { Router } from '@angular/router';
 })
 
 export class AboutComponent implements OnInit {
-  router: any;
 
-  constructor() {}
-
+  constructor() { }
 
   ngOnInit(): void {
   }
-
-  navToEducation(): void {
-    this.router.navigate(['about', 'education']);
-  }
-
-  navToEmployment(): void {
-    this.router.navigate(['about', 'employment']);
-  }
-
-  navToProjects(): void {
-    this.router.navigate(['about', 'skills']);
-  }
-
 }
