@@ -1,4 +1,55 @@
-.education_icons {
-  padding: 2px;
-  width: 250px;
+.about {
+  margin: 10px;
+}
+
+mat-card-container {
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.MSSU {
+  margin: 10px;
+  width: 217px;
+  height: 100%;
+  border: 5px solid white;
+  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
+  margin: 0px;
+}
+
+mat-card {
+  max-width: 500px;
+  margin: 15px;
+  color: #1a2d42;
+  border: #1a2d42 1px solid;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  background-color: white;
   }
+
+mat-card-content{
+  padding: 8px;
+  font-size: 20px;
+  text-align: left;
+}
+
+img {
+  margin: 10px;
+  width: 275px;
+  height: 100%;
+}
+
+//List of education
+ul {
+  list-style: none;
+  padding-left: 10px;
+  text-align: left;
+  font-size: 20px;
+  margin: 0px;
+}

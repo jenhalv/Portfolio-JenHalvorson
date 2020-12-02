@@ -22,19 +22,21 @@ mat-card {
 }
 
 .experience-title {
-  font-size: 35px;
+  font-size: 25px;
   text-align: left;
-  font-family: 'Rancho';
-  margin-bottom: 0px;
+  // font-family: 'Rancho';
+  font-family: 'Special Elite';
 }
 
 //List of experience
 ul {
   list-style: none;
   padding-left: 10px;
+  line-height: 40px;
   text-align: left;
-  font-family: 'Rancho';
-  font-size: 26px;
+  // font-family: 'Rancho';
+  font-family: 'Special Elite';
+  font-size: 21px;
   margin: 0px;
 }
 
@@ -54,9 +56,10 @@ ul li:before {
 }
 
 .frontend-title {
-  font-family: 'Courier New', Courier, monospace;
+  // font-family: 'Courier New', Courier, monospace;
+  font-family: 'Special Elite';
   font-size: 25px;
-  font-weight: bold;
+  line-height: 29px;
 }
 
 .list-icons {

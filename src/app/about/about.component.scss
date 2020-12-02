@@ -3,9 +3,11 @@
 }
 
 mat-card-container {
+  font-family: 'Special Elite';
+  font-size: 18px;
   display: flex;
   color: #1a2d42;
-  max-width: 1200px;
+  max-width: 500px;
   margin: auto;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -14,18 +16,13 @@ mat-card-container {
   text-align: center;
   align-content: center;
   flex-wrap: wrap;
-  background-color: white;
-  border: #1a2d42 3px;
-  border-style: solid;
 }
 
 mat-card {
   width: 125px;
   margin: 5px;
-  font-size: large;
   color: #1a2d42;
   border: #1a2d42 1px solid;
-  text-align: center;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
   background-color: white;
   padding: 3px;
@@ -36,6 +33,13 @@ mat-card:hover {
   background-color: #d0d0d0;
   transition: background-color 2s, color 500ms, font-size 500ms linear;
   color: #1a2d42;
+}
+
+a {
+  text-decoration: none;
+  color: #1a2d42;
+  font-size: large;
+  text-align: center;
 }
 
 .about-icons {

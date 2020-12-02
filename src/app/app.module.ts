@@ -24,6 +24,8 @@ import { SkillsComponent } from './about/skills/skills.component';
 import { EducationComponent } from './about/education/education.component';
 import { EmploymentComponent } from './about/employment/employment.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
+    MatGridListModule,
+    MatListModule,
     MatCardModule,
     BrowserAnimationsModule,
     FormsModule,
