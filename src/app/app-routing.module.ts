@@ -4,9 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { EducationComponent } from './about/education/education.component';
 import { EmploymentComponent } from './about/employment/employment.component';
 import { SkillsComponent } from './about/skills/skills.component';
-import { AboutComponent } from './about/about.component';
-import { LoginComponent } from './login/login.component';
-import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
