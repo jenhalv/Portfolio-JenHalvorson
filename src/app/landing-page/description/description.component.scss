@@ -1,19 +1,9 @@
 mat-card-container {
-  display: flex;
   max-width: 1050px;
-  margin: auto;
-  margin-top: 10px;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  align-content: center;
-  flex-wrap: wrap;
-  background-color: white;
 }
 
 mat-card {
   width: 330px;
-  margin: 10px;
   color: #eeeeee;
   background-color:#1a2d42;
   border: 5px solid white;
@@ -24,8 +14,6 @@ mat-card {
 .experience-title {
   font-size: 25px;
   text-align: left;
-  // font-family: 'Rancho';
-  font-family: 'Special Elite';
 }
 
 //List of experience
@@ -34,8 +22,6 @@ ul {
   padding-left: 10px;
   line-height: 40px;
   text-align: left;
-  // font-family: 'Rancho';
-  font-family: 'Special Elite';
   font-size: 21px;
   margin: 0px;
 }
@@ -49,8 +35,7 @@ ul li:before {
 
 .personal-pic {
   margin: 10px;
-  width: 217px;
-  height: 100%;
+  width: 224px;
   border: 5px solid white;
   box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
 }
@@ -60,10 +45,6 @@ ul li:before {
   font-family: 'Special Elite';
   font-size: 25px;
   line-height: 29px;
-}
-
-.list-icons {
-  height: 100%;
 }
 
 .icon {

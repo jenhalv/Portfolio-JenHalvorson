@@ -15,7 +15,6 @@ import { RouterModule } from '@angular/router';
 
 import { NgImageSliderModule } from 'ng-image-slider';
 import { GalleryModule } from '@ngx-gallery/core';
-import { CarouselComponent } from './landing-page/carousel/carousel.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { MenuButtonComponent } from './toolbar/menu-button/menu-button.component';
 import { AboutComponent } from './about/about.component';
@@ -26,6 +25,8 @@ import { EmploymentComponent } from './about/employment/employment.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatListModule } from '@angular/material/list';
+import { ProjectsComponent } from './about/projects/projects.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { MatListModule } from '@angular/material/list';
     EmploymentComponent,
     SkillsComponent,
     EducationComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,

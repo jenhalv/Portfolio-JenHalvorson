@@ -1,27 +1,5 @@
-.about {
-  margin: 10px;
-}
-
 mat-card-container {
-  display: flex;
-  max-width: 800px;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  align-content: center;
-  flex-wrap: wrap;
-  background-color: white;
-  margin-top: 20px;
-}
-
-.MSSU {
-  margin: 10px;
-  width: 217px;
-  height: 100%;
-  border: 5px solid white;
-  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
-  margin: 0px;
+  max-width: 875px;
 }
 
 mat-card {
@@ -31,18 +9,21 @@ mat-card {
   border: #1a2d42 1px solid;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
   background-color: white;
-  }
+}
 
 mat-card-content{
-  padding: 8px;
-  font-size: 20px;
+  padding: 5px;
+  font-size: 17px;
   text-align: left;
 }
 
-img {
+.education {
+  max-width: 550px;
+}
+
+.education-image {
   margin: 10px;
-  width: 275px;
-  height: 100%;
+  width: 250px;
 }
 
 //List of education
