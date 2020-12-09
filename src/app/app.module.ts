@@ -1,32 +1,48 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
-
-import { AppComponent } from './app.component';
-import { FooterComponent } from './footer/footer.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
-
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { MatCardModule } from '@angular/material/card';
-import { ContactMeComponent } from './contact-me/contact-me.component';
-import { DescriptionComponent } from './landing-page/description/description.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
-
 import { NgImageSliderModule } from 'ng-image-slider';
-import { GalleryModule } from '@ngx-gallery/core';
-import { ImageSliderComponent } from './image-slider/image-slider.component';
-import { MenuButtonComponent } from './toolbar/menu-button/menu-button.component';
 import { AboutComponent } from './about/about.component';
-
-import { SkillsComponent } from './about/skills/skills.component';
 import { EducationComponent } from './about/education/education.component';
 import { EmploymentComponent } from './about/employment/employment.component';
-import { AppRoutingModule } from './app-routing.module';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatListModule } from '@angular/material/list';
 import { ProjectsComponent } from './about/projects/projects.component';
+import { SkillsComponent } from './about/skills/skills.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
+import { FooterComponent } from './footer/footer.component';
+import { ImageSliderComponent } from './image-slider/image-slider.component';
+import { DescriptionComponent } from './landing-page/description/description.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { MenuButtonComponent } from './toolbar/menu-button/menu-button.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+
+
+const ANGULAR_MATERIAL_MODULES = [
+  MatIconModule,
+  MatToolbarModule,
+  MatMenuModule,
+  MatListModule,
+  MatFormFieldModule,
+  MatDialogModule,
+  MatInputModule,
+  MatCardModule,
+  MatButtonModule,
+  MatGridListModule
+];
 
 @NgModule({
   declarations: [
@@ -47,26 +63,16 @@ import { CarouselComponent } from './carousel/carousel.component';
   ],
   imports: [
     BrowserModule,
-    MatGridListModule,
-    MatListModule,
-    MatCardModule,
     BrowserAnimationsModule,
     FormsModule,
     NgImageSliderModule,
     RouterModule,
-    GalleryModule.withConfig({
-      loadingMode: 'indeterminate'
-    }),
     AppRoutingModule,
+    ANGULAR_MATERIAL_MODULES
   ],
 
   providers: [],
-  bootstrap: [AppComponent
-  ],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA,
-    NO_ERRORS_SCHEMA
-  ]
+  bootstrap: [AppComponent]
 })
 
 export class AppModule { }
