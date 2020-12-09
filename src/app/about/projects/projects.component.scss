@@ -1,8 +1,30 @@
 mat-card-container {
-  max-width: 600px;
+  max-width: 1300px;
 }
 
 img {
-  border: #1a2d42 4px solid;
-  padding: 5px;
+  border: #1a2d42 2px solid;
+  padding: 3px;
+  width: 300px;
+  margin: 10px;
+}
+
+mat-card-image {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mat-card-image:first-child {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 300px) {
+  img {
+    border: #1a2d42 2px solid;
+    padding: 3px;
+    width: 260px;
+    margin: 5px;
+  }
 }
