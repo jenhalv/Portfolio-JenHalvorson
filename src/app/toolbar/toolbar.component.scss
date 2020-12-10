@@ -1,6 +1,4 @@
 mat-toolbar {
-  display: flex;
-  height: 100%;
   max-height: 75px;
   width: 100%;
   background-color: #1a2d42;
@@ -8,24 +6,20 @@ mat-toolbar {
   justify-content: left;
   left: 0;
   top: 0;
+  padding: 0px;
 }
 
 a {
   display: flex;
-  height: 100%;
-  max-width: fit-content;
   align-items: center;
   text-decoration: none;
 }
 
 .welcome {
-  font-family: 'Special Elite';
   font-size: x-large;
   color: white;
   margin-left: 5px;
-  flex-wrap: wrap;
   margin-top: 5px;
-  display: flex;
 }
 
 img {
@@ -33,5 +27,13 @@ img {
   margin: 0px;
 }
 
-
-
+@media only screen and (max-width: 310px) {
+  .narrow2 {
+    display: block
+    }
+}
+@media only screen and (max-width: 450px) {
+  .narrow1 {
+    display: block
+  }
+}

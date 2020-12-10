@@ -6,6 +6,7 @@ import { EmploymentComponent } from './about/employment/employment.component';
 import { SkillsComponent } from './about/skills/skills.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProjectsComponent } from './about/projects/projects.component';
+import { MatCardComponent } from './mat-card/mat-card.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'skills',
     component: SkillsComponent
+  },
+  {
+    path: 'mat-card',
+    component: MatCardComponent
   },
   {
     path: '',

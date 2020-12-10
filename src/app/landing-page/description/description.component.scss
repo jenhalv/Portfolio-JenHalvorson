@@ -1,8 +1,14 @@
 .card-container {
   max-width: 1050px;
+display: flex;
+margin: auto;
+justify-content: space-around;
+align-items: center;
+align-content: center;
+flex-wrap: wrap;
 }
 
-mat-card {
+.experience {
   width: 330px;
   color: #eeeeee;
   background-color:#1a2d42;
@@ -45,9 +51,38 @@ ul li:before {
   font-family: 'Special Elite';
   font-size: 25px;
   line-height: 29px;
+  text-align: center;
+  color: white;
 }
 
+.icon-list {
+  width: 330px;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color:#1a2d42;
+  border: 5px solid white;
+  border-radius: 0px;
+  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
 .icon {
   width: 60px;
   padding: 7px;
+}
+
+@media only screen and (max-width: 300px) {
+  .narrow2 {
+    display: block
+    }
+}
+@media only screen and (max-width: 350px) {
+  .narrow1 {
+    display: block
+  }
+  .narrow2 {
+    display: block
+    }
 }

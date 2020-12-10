@@ -29,6 +29,7 @@ import { DescriptionComponent } from './landing-page/description/description.com
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MenuButtonComponent } from './toolbar/menu-button/menu-button.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { MatCardComponent } from './mat-card/mat-card.component';
 
 
 const ANGULAR_MATERIAL_MODULES = [
@@ -60,6 +61,7 @@ const ANGULAR_MATERIAL_MODULES = [
     SkillsComponent,
     EducationComponent,
     ProjectsComponent,
+    MatCardComponent,
   ],
   imports: [
     BrowserModule,
