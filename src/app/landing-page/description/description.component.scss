@@ -15,6 +15,10 @@ flex-wrap: wrap;
   border: 5px solid white;
   border-radius: 0px;
   box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .experience-title {
@@ -39,6 +43,20 @@ ul li:before {
   padding-right: 5px;
 }
 
+.photo {
+    width: 224px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
 .personal-pic {
   margin: 10px;
   width: 224px;
@@ -55,18 +73,22 @@ ul li:before {
   color: white;
 }
 
-.icon-list {
+.tools {
   width: 330px;
-  display: flex;
-  margin: auto;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
+  color: #eeeeee;
   background-color:#1a2d42;
   border: 5px solid white;
   border-radius: 0px;
   box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .icon {
   width: 60px;
