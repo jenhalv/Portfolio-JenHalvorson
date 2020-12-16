@@ -4,11 +4,12 @@
   margin: 5px;
   border: black 1px solid;
 }
-// .example-header-image {
-//   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-//   background-size: cover;
-// }
-
+.example-header-image {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolio-jenhalvorson.appspot.com/o/ArvidLogoSmall.png?alt=media&token=cc9859fb-7f37-4486-a511-189baa39b437');
+  background-size: cover;
+  border-radius: 0px;
+  height: 40px;
+}
 
 .card-container {
   max-width: 1300px;
@@ -20,29 +21,26 @@
   flex-wrap: wrap;
 }
 
-// img {
-//   border: #1a2d42 2px solid;
-//   padding: 3px;
-//   width: 300px;
-//   margin: 10px;
-// }
+.next {
+  display: flex;
+  justify-content: space-between;
+}
+.route-card {
+  width: 50px;
+  color: #1a2d42;
+  text-align: center;
+}
 
-// mat-card-image {
-//   margin-top: 10px;
-//   margin-bottom: 10px;
-// }
+.route-card:hover {
+  cursor: pointer;
+}
 
-// .mat-card-image:first-child {
-//   margin-top: 10px;
-//   margin-bottom: 10px;
-// }
+a {
+  text-decoration: none;
+}
 
-/* Responsive Styles */
-// @media only screen and (max-width: 300px) {
-//   img {
-//     border: #1a2d42 2px solid;
-//     padding: 3px;
-//     width: 260px;
-//     margin: 5px;
-//   }
-// }
+.route-pic {
+  width: 30px;
+  font-size: 35px;
+  font-family: Helvetica;
+}
