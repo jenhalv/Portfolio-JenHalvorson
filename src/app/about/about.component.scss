@@ -35,18 +35,7 @@ h2 {
     font-family: 'Special Elite'
   }
 
-// mat-card {
-//   width: 115px;
-//   margin: 5px;
-//   color: #1a2d42;
-//   border: #1a2d42 1px solid;
-//   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
-//   background-color: white;
-//   padding: 3px;
-// }
-
-
-mat-card:hover {
+  mat-card:hover {
   cursor: pointer;
   background-color: #d0d0d0;
   transition: background-color 2s, color 500ms, font-size 500ms linear;

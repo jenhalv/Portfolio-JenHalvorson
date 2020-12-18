@@ -1,16 +1,3 @@
-.example-card {
-  max-width: 300px;
-  border-radius: 0px;
-  margin: 5px;
-  border: black 1px solid;
-}
-.example-header-image {
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolio-jenhalvorson.appspot.com/o/ArvidLogoSmall.png?alt=media&token=cc9859fb-7f37-4486-a511-189baa39b437');
-  background-size: cover;
-  border-radius: 0px;
-  height: 40px;
-}
-
 .card-container {
   max-width: 1300px;
   display: flex;
@@ -21,26 +8,80 @@
   flex-wrap: wrap;
 }
 
+.project-card {
+  max-width: 300px;
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: black 1px solid;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.project-header {
+  display: flex;
+  align-items: left;
+}
+
+.mat-card-header .mat-card-title {
+  margin-bottom: 7px;
+}
+
+.header-image {
+  background-size: cover;
+  border-radius: 0px;
+  width: 20px;
+  margin: 5px;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.mat-card-image:first-child {
+  margin-top: -12px;
+}
+
+.mat-card-subtitle {
+  font-size: small;
+  margin-left: 25px;
+  margin-bottom: 0px;
+  color: grey;
+  a {
+    text-decoration: underline;
+  }
+  a:hover {
+  cursor: pointer;
+  transition: background-color 3s, color 1000ms, font-size 1000ms linear;
+  color: black;
+}
+  }
+
 .next {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
+
 .route-card {
-  width: 50px;
+  width: 85px;
   color: #1a2d42;
   text-align: center;
+  font-size: 45px;
+  font-family: Helvetica;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.route-pic {
+  width: 40px;
+  vertical-align: text-bottom;
+  padding-bottom: 5px;
 }
 
 .route-card:hover {
   cursor: pointer;
-}
-
-a {
   text-decoration: none;
-}
-
-.route-pic {
-  width: 30px;
-  font-size: 35px;
-  font-family: Helvetica;
 }

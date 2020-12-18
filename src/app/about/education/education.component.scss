@@ -55,12 +55,15 @@
 .next {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .route-card {
-  width: 50px;
+  width: 85px;
   color: #1a2d42;
   text-align: center;
+  font-size: 45px;
+  font-family: Helvetica;
 }
 
 .route-card:hover {
@@ -72,9 +75,9 @@ a {
 }
 
 .route-pic {
-  width: 30px;
-  font-size: 35px;
-  font-family: Helvetica;
+  width: 40px;
+  vertical-align: text-bottom;
+  padding-bottom: 5px;
 }
 
 @media only screen and (max-width: 325px) {
