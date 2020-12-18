@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  data = 'I like this read-more component because it\'s very helpful. This tutorial so good. I will share it with others.';
+  dataLength: boolean;
 
-  ngOnInit(): void {
+  // tslint:disable-next-line:typedef
+  ngOnInit() {
+    this.isReadMore(this.data);
   }
 
+  // tslint:disable-next-line:typedef
+  isReadMore(data: string) {
+    // (data.length > 30) ? this.dataLength = false : this.dataLength = true;
+    this.dataLength = !(data.length > 30);
+  }
 }
+
