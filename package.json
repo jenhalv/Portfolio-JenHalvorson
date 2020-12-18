@@ -24,11 +24,13 @@
     "@angular/platform-browser": "~10.0.6",
     "@angular/platform-browser-dynamic": "~10.0.6",
     "@angular/router": "~10.0.6",
+    "angular-read-more": "^1.0.7",
     "blueimp-gallery": "^3.3.0",
     "bootstrap": "^4.5.2",
     "firebase": "^8.1.2",
     "include-media": "^1.4.9",
     "ng-image-slider": "^2.6.1",
+    "ng-readmore": "^1.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
