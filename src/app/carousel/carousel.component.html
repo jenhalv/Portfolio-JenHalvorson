@@ -10,4 +10,185 @@
   <img width="40" src="../../../assets/experience-icons/Yarn_icon.png" alt="Yarn Icon">
 </div>
 
+<!-- Expansion panels in one section
 
+
+      <button mat-flat-button color="primary" (click)="openAllPanels()"><b>Open Panels</b></button> &nbsp;
+<button mat-flat-button color="primary" (click)="closeAllPanels()"><b>Close Panels</b></button>
+
+<mat-accordion
+[displayMode]="flat"
+[multi]="true"
+#accordion="matAccordion"
+>
+
+  <mat-expansion-panel
+  [disabled]="panel.isDisabled"
+  [expanded]="panel.isExpanded"
+  [hideToggle]="true"
+  (opened)="beforePanelOpened(panel)"
+  (closed)="beforePanelClosed(panel)"
+  (afterCollapse)="afterPanelClosed($event)"
+  (afterExpand)="afterPanelOpened($event)"
+
+  *ngFor="let panel of accordionList"
+  #mapanel="matExpansionPanel"
+  >
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <b>Title: {{panel.title}}</b>
+      </mat-panel-title>
+      <mat-panel-description>
+
+        Currently I am {{panel.isExpanded ? 'open' : 'closed'}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <p>{{panel.description}}</p>
+    <mat-action-row>
+        <button mat-flat-button (click)="mapanel.close()">Click to close</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
+
+export class ProjectsComponent implements OnInit {
+
+  show = false;
+  panelOpenState = false;
+  accordionList: any;
+  Accordion: MatAccordion;
+
+  constructor() {
+    this.accordionList = [
+      {
+        id: 'panel-1',
+        title: 'Panel One',
+        description: 'Description One',
+        isDisabled: false,
+        isExpanded: false
+      }, {
+        id: 'panel-2',
+        title: 'Panel Two (Disabled)',
+        description: 'Description Two',
+        isDisabled: true,
+        isExpanded: false
+      }, {
+        id: 'panel-3',
+        title: 'Panel Three',
+        description: 'Description Three',
+        isDisabled: false,
+        isExpanded: true
+      },
+    ]
+   }
+
+  ngOnInit() {
+  }
+
+  beforePanelClosed(panel){
+    panel.isExpanded = false;
+    console.log('Panel going to close!');
+  }
+  beforePanelOpened(panel){
+    panel.isExpanded = true;
+    console.log('Panel going to  open!');
+  }
+
+  afterPanelClosed(){
+    console.log('Panel closed!');
+  }
+  afterPanelOpened(){
+    console.log('Panel opened!');
+  }
+
+
+  closeAllPanels(){
+    this.Accordion.closeAll();
+  }
+  openAllPanels(){
+    this.Accordion.openAll();
+  }
+
+}
+
+-->
+
+<!-- USE FOR A GRID to display images & info?
+        <mat-grid-list cols = "4" rowHeight = "100px">
+            <mat-grid-tile
+            [colspan] = "3"
+            [rowspan] = "1">1
+            </mat-grid-tile>
+            <mat-grid-tile
+            [colspan] = "1"
+            [rowspan] = "2">2
+            </mat-grid-tile>
+            <mat-grid-tile
+            [colspan] = "1"
+            [rowspan] = "1">3
+            </mat-grid-tile>
+            <mat-grid-tile
+            [colspan] = "2"
+            [rowspan] = "1">4
+            </mat-grid-tile>
+         </mat-grid-list>
+
+GRID STYLE
+
+// mat-grid-tile {
+//   background: lightblue;
+//  }
+
+// .mat-list-base .mat-list-item {
+//   height: 20px;
+//   padding-top: 0px;
+//  }
+
+//  mat-grid-list {
+//   display: flex;
+//  }
+
+-->
+
+
+<!-- READ MORE IDEAS
+
+    <mat-card-content class="project-description" [class.show]="show">Starting with basic HTML, SCSS, and TS additions and changes to <a href="https://www.arvidoutdoors.com">Arvid Outdoors</a> using Angular in Visual Studio Code, I later designed, created, and styled the <i>Let's Get Social</i>, <i>About Us</i>, <i>FAQ</i>, & <i>Adventure Spotlight</i> components. I continue updating small changes to the website, writing or including new articles on the Adventure Spotlight blog about outdoor adventures, and promote & market the site on social media.
+    </mat-card-content>
+    <button class="read-more" (click)="show = !show">{{ show ? 'Read Less': 'Read More' }}</button>
+
+
+.mat-card-content {
+    margin-bottom: 5px;
+}
+
+.project-description {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.show {
+    overflow: visible;
+    white-space: pre-wrap;
+}
+
+.read-more {
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-image: initial;
+    border: black 1px solid;
+    border-radius: 3px;
+    align-content: flex-end;
+}
+
+.read-more:hover {
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 2s, color 500ms, font-size 500ms linear;
+    color: black;
+}
+
+-->

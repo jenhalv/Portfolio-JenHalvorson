@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatAccordion } from '@angular/material/expansion';
 
 @Component({
   selector: 'app-projects',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  show = false;
+  panelOpenState = false;
 
   constructor() { }
 
@@ -15,4 +16,3 @@ export class ProjectsComponent implements OnInit {
   }
 
 }
-
