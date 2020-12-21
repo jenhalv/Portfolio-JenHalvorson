@@ -33,11 +33,6 @@ import { MatCardComponent } from './mat-card/mat-card.component';
 
 import { ReadMoreComponent } from './read-more/read-more.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faChevronRight, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-library.add(faChevronRight);
-library.add(faChevronDown);
-
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -79,6 +74,7 @@ const ANGULAR_MATERIAL_MODULES = [
     FontAwesomeModule,
     RouterModule,
     AppRoutingModule,
+    FontAwesomeModule,
     ANGULAR_MATERIAL_MODULES
   ],
 

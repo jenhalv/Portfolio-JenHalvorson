@@ -1,21 +1,21 @@
 .card-container {
-  max-width: 1300px;
+  max-width: 1700px;
   display: flex;
   margin: auto;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+  justify-content: center;
+
+
   flex-wrap: wrap;
-  overflow: hidden;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .project-card {
-  max-width: 300px;
+  width: 280px;
   margin: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
   border: black 1px solid;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .project-header {
@@ -55,7 +55,40 @@
   transition: background-color 3s, color 1000ms, font-size 1000ms linear;
   color: black;
 }
-  }
+}
+
+.mat-card-content {
+    margin-bottom: 5px;
+}
+
+.project-description {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.show {
+    overflow: visible;
+    white-space: pre-wrap;
+}
+
+.read-more {
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-image: initial;
+    border: black 1px solid;
+    border-radius: 3px;
+    align-content: flex-end;
+}
+
+.read-more:hover {
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 2s, color 500ms, font-size 500ms linear;
+    color: black;
+}
 
 .next {
   display: flex;

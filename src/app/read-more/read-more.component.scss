@@ -1,30 +1,18 @@
-$font-size:100%;
-$line-height: 1.5;
-$lines-to-show: 1;
+$lines-to-show: 5;
 
-div.collapsed {
+.collapsed {
   display: -webkit-inline-box;
   display: inline-block;
-  font-size: $font-size;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 85%;
+  width: 60%;
 }
 
-.readMore {
-    margin-top: -3px !important;
-    line-height: 1.4 !important;
-}
-
-.isCollapsed {
-    width: 85%;
-}
-
-.cb {
-    clear: both;
-    height: 0;
-}
+// .cb {
+//     clear: both;
+//     height: 0;
+// }
 
 .pull-right {
   float: right;
@@ -32,4 +20,9 @@ div.collapsed {
 
 .pull-left {
   float: left;
+}
+
+.ng-fa-icon {
+  font-size: large;
+  color: red;
 }

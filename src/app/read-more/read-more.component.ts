@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-read-more',
@@ -8,9 +9,10 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 })
 
 export class ReadMoreComponent implements OnInit {
+  faChevronRight = faChevronRight;
+
   @Input() dataLength: boolean;
-  // @Input() maxHeight: number; // enable below comment if you want to show 1 or 2 lines of the content element
-  // @Input() maxWidth: number; // enable below comment if you want to show 1 or 2 lines of the content element
+
   public isCollapsed = true;
   public isCollapsable = false;
 

@@ -1,10 +1,10 @@
-<div [class.collapsed]="isCollapsed" [ngClass]="{'isCollapsed': !isCollapsed}" class="pull-left pt-2 readMore">
-    <ng-content></ng-content>
+<div [class.collapsed]="isCollapsed" [ngClass]="{'isCollapsed': !isCollapsed}" class="pull-left pt-2">
+  <ng-content></ng-content>
+  <i class="fa fa-chevron-right"></i>
 </div>
+<i class="fa fa-chevron-right" style="font-size:64px"></i>
 <a (click)="isCollapsed = !isCollapsed" [hidden]="dataLength" class="pt-2 pull-right">
-  <fa-icon icon="chevron-right" *ngIf="isCollapsed"></fa-icon>
-  <fa-icon icon="chevron-down" *ngIf="!isCollapsed"></fa-icon>
+
+<fa-icon icon="fa fa-chevron-right" *ngIf="isCollapsed"></fa-icon>
+<fa-icon icon="faChevronDown" *ngIf="!isCollapsed"></fa-icon>
 </a>
-<div class='cb'></div>
-
-

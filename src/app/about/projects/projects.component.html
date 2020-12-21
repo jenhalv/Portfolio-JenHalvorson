@@ -8,30 +8,9 @@
       <mat-card-subtitle><a href="https://www.arvidoutdoors.com">Arvid Outdoors</a></mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="assets/projects-photos/Project_AO.png" alt="Arvid Outdoors Blog Page">
-
-    <!-- <ang-readmore [text]="notes" [length]="30" linkColor="#26A69A">testing?????????????</ang-readmore> -->
-    <!-- <app-read-more>
-        Starting with basic HTML, SCSS, and TS additions and changes to <a href="https://www.arvidoutdoors.com">Arvid Outdoors</a>using Angular in Visual Studio Code, I later designed, created, and styled the Let's Get Social, About Us, FAQ, & Adventure Spotlight components. I continue updating small changes to the website, writing or including new articles on the Adventure Spotlight blog about outdoor adventures, and promote & market the site on social media.
-
-     </app-read-more> -->
-
-<!--
-    <div class="container" ng-class="{show}">
-        Get Social, About Us, FAQ, & Adventure Spotlight components. I continue updating small changes to the website, writing or including new articles on the Adventure Spotlight blog about outdoor adventures, and promote & market the site on social media.Get Social, About Us, FAQ, & Adventure Spotlight components. I continue updating small changes to the website, writing or including new articles on the Adventure Spotlight blog about outdoor adventures, and promote & market the site on social media.Get Social, About Us, FAQ, & Adventure Spotlight components. I continue updating small changes to the website, writing or including new articles on the Adventure Spotlight blog about outdoor adventures, and promote & market the site on social media.Get Social, About Us, FAQ, & Adventure Spotlight components. I continue updating small changes to the website, writing or including new articles on the Adventure Spotlight blog about outdoor adventures, and promote & market the site on social media.Get Social, About Us, FAQ, & Adventure Spotlight components. I continue updating small changes to the website, writing or including new articles on the Adventure Spotlight blog about outdoor adventures, and promote & market the site on social media.
-    </div>
-    <button ng-click="show = true">Show text</button> -->
-
-    <app-read-more [dataLength]="dataLength">
-      {{ data }}
-    </app-read-more>
-
-     <!-- <app-read-more></app-read-more> -->
-
-  <!-- <mat-card-content>
-      <p>
-
-      </p>
-    </mat-card-content> -->
+    <mat-card-content class="project-description" [class.show]="show">Starting with basic HTML, SCSS, and TS additions and changes to <a href="https://www.arvidoutdoors.com">Arvid Outdoors</a> using Angular in Visual Studio Code, I later designed, created, and styled the <i>Let's Get Social</i>, <i>About Us</i>, <i>FAQ</i>, & <i>Adventure Spotlight</i> components. I continue updating small changes to the website, writing or including new articles on the Adventure Spotlight blog about outdoor adventures, and promote & market the site on social media.
+    </mat-card-content>
+    <button class="read-more" (click)="show = !show">{{ show ? 'Read Less': 'Read More' }}</button>
   </mat-card>
 
   <mat-card class="project-card">
@@ -42,6 +21,9 @@
       <mat-card-subtitle><a href="https://halvorsonshome.weebly.com/">Classroom Website</a></mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="assets/projects-photos/Project_HH.png" alt="Mrs. Halvorson's Classroom Website">
+    <mat-card-content class="project-description" [class.show]="show">Using a template from Weebly, I embellished <a href="https://halvorsonshome.weebly.com/">Mrs. Halvorson’s Home</a>, a Weebly website to use daily in my kindergarten classroom that had easy-to-use tabs with custom educational pictures for my students, as well as other teachers in my district.  HTML was implemented to image source the child-friendly pictures saved within my site and a link directed the user to other supplemental educational websites.  CSS was used to make image borders and specific sizes were added to help the site look clean and user-friendly.
+    </mat-card-content>
+    <button class="read-more" (click)="show = !show">{{ show ? 'Read Less': 'Read More' }}</button>
   </mat-card>
 
   <mat-card class="project-card">
@@ -52,6 +34,9 @@
         <mat-card-subtitle><a href="http://picturesinfocus.weebly.com/">Pictures in Focus</a></mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="assets/projects-photos/Project_PIF.png" alt="Pictures in Focus Website">
+      <mat-card-content class="project-description" [class.show]="show">From 2004-2011, I built my own photography business and personalized a weebly template to showcase a few of my favorite wedding & engagement pictures.  The site is straightforward and fundamental.
+      </mat-card-content>
+      <button class="read-more" (click)="show = !show">{{ show ? 'Read Less': 'Read More' }}</button>
   </mat-card>
 
   <mat-card class="project-card">
@@ -62,6 +47,9 @@
       <mat-card-subtitle><a href="https://portfolio-jenhalvorson.web.app/">Personal Portfolio</a></mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="assets/projects-photos/Project_JH.png" alt="My Portfolio">
+    <mat-card-content class="project-description" [class.show]="show">Building from the Hello World Angular app, I created this unique customized personal <a href="https://portfolio-jenhalvorson.web.app/">Portfolio</a> using HTML & SCSS, as well as incorporating routing to showcase my education, employment, projects, and skills.  I house the site using Firebase and use their storage for images and code.  This project has given me a great deal of pride since it’s my first completely written app from scratch.  I added in my own images and created icons (like the resume, computer, and grad cap) using Adobe Photoshop & Illustrator.  The portfolio will always be a work in progress as I add more information.  My goal is to have some basic javascript functions to showcase a few small projects I have completed from different coursework.
+    </mat-card-content>
+    <button class="read-more" (click)="show = !show">{{ show ? 'Read Less': 'Read More' }}</button>
   </mat-card>
 
   <mat-card class="project-card">
@@ -72,6 +60,9 @@
       <mat-card-subtitle><a href="http://www.roofpowersolar.com/">Roof Power Solar</a></mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="assets/projects-photos/Project_RPS.png" alt="Roof Power Solar Website">
+    <mat-card-content class="project-description" [class.show]="show">A local company, <a href="http://www.roofpowersolar.com/">Roof Power Solar</a>, hired me to create a basic customized weebly-hosted site that the owner would be able to edit on his own as needed.  Using some custom HTML and style, the company color scheme, and images & text supplied by the owner, I made the site eye-appealing as well as functional.
+    </mat-card-content>
+    <button class="read-more" (click)="show = !show">{{ show ? 'Read Less': 'Read More' }}</button>
   </mat-card>
 
   <mat-card class="project-card">
@@ -82,6 +73,9 @@
       <mat-card-subtitle><a href="http://moseeds.weebly.com/">Gardening Website</a></mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="assets/projects-photos/Project_HG.png" alt="Home Gardening Seed Selling Website">
+    <mat-card-content class="project-description" [class.show]="show"><a href="http://moseeds.weebly.com/">Home Gardening</a>, hired me to create a basic customized weebly-hosted site that the owner could connect to his Etsy selling site.  Using a basic weebly template, and images & text supplied by the owner, the site is clean and simple.
+    </mat-card-content>
+    <button class="read-more" (click)="show = !show">{{ show ? 'Read Less': 'Read More' }}</button>
   </mat-card>
 
   <mat-card class="project-card">
@@ -92,6 +86,9 @@
         <mat-card-subtitle>Angular Workshop</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="assets/projects-photos/Project_NG.png" alt="To Do Project">
+      <mat-card-content class="project-description" [class.show]="show">This project was completed during an NGgirls conference in 2019.  I attended again in 2020 (virtually) and created another to-do list as well.  I had a great time networking with fellow Angular newbies and pros.  This project helped instill my basic knowledge of the angular platform.  I created a login and added my own flare with style.  A link to the list may be added later (depending on login security).
+      </mat-card-content>
+      <button class="read-more" (click)="show = !show">{{ show ? 'Read Less': 'Read More' }}</button>
   </mat-card>
 
 </div>
