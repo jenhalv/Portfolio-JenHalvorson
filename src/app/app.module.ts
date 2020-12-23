@@ -34,6 +34,7 @@ import { MatCardComponent } from './mat-card/mat-card.component';
 import { ReadMoreComponent } from './read-more/read-more.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { ProjectCardComponent } from './about/projects/project-card/project-card.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -66,7 +67,8 @@ const ANGULAR_MATERIAL_MODULES = [
     EducationComponent,
     ProjectsComponent,
     MatCardComponent,
-    ReadMoreComponent
+    ReadMoreComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,

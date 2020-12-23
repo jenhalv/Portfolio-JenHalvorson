@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatAccordion } from '@angular/material/expansion';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -8,11 +7,16 @@ import { MatAccordion } from '@angular/material/expansion';
 })
 export class ProjectsComponent implements OnInit {
 
-  panelOpenState = false;
+  // allExpandState = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+//   toggleExpandState() {
+//     this.allExpandState = !this.allExpandState;
+//     this.panelOpenState = !this.panelOpenState;
+// }
 
 }
