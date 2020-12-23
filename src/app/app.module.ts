@@ -35,6 +35,7 @@ import { ReadMoreComponent } from './read-more/read-more.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ProjectCardComponent } from './about/projects/project-card/project-card.component';
+import { SafePipeModule } from 'safe-pipe';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -79,6 +80,7 @@ const ANGULAR_MATERIAL_MODULES = [
     RouterModule,
     AppRoutingModule,
     FontAwesomeModule,
+    SafePipeModule,
     ANGULAR_MATERIAL_MODULES
   ],
 

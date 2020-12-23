@@ -4,12 +4,12 @@
     <div mat-card-avatar class="header-image">
     <img mat-card-image [src]="card.logo" [alt]="card.logoAlt"/></div>
     <mat-card-title class="project-title">&#9733;{{card.title}}</mat-card-title>
-    <mat-card-subtitle class="project-subtitle" [innerHTML]="card.subtitle"></mat-card-subtitle>
+    <mat-card-subtitle class="project-subtitle" [innerHTML]="card.subtitle | safe: 'html'"></mat-card-subtitle>
   </mat-card-header>
 
   <img mat-card-image [src]="card.image" [alt]="card.imageAlt" />
 
-  <mat-card-content *ngIf="card.collapsed" [innerHTML]="card.content">
+  <mat-card-content *ngIf="card.collapsed" [innerHTML]="card.content | safe: 'html'">
   </mat-card-content>
 
   <mat-card-actions>
