@@ -1,3 +1,24 @@
+.card-container {
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+  color: black;
+  max-width: 1500px;
+  margin: auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: inherit;
+}
+
 .project-card {
   max-width: 280px;
   margin: 5px;
@@ -30,31 +51,23 @@
   margin-top: -12px;
 }
 
-.project-subtitle {
+:host ::ng-deep .project-subtitle {
   font-size: small;
   margin-left: 25px;
   margin-bottom: 0px;
-  a {
-    color: grey !important;
-  }
-  a:hover {
-    transition: background-color 3s, color 1000ms, font-size 1000ms linear;
-    color: black;
-    }
-  a:visited {
+}
+
+:host ::ng-deep a:visited {
   color: inherit;
 }
+
+.mat-card-image {
+  margin: 0 -16px;
 }
 
 .mat-card-content {
-    margin-bottom: 0px;
-    padding: 5px 0px;
-    border-top: 1px solid;
-}
-
-p {
-  padding: 0px;
-  margin: 0px;
+  margin-bottom: 0px;
+  padding: 5px 0px;
 }
 
 .project-description {
@@ -63,32 +76,28 @@ p {
   text-overflow: ellipsis;
 }
 
-.show {
-  overflow: visible;
-  white-space: pre-wrap;
-}
-
 .read-more {
     color: white;
     cursor: pointer;
     background-color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    border-image: initial;
-    border: black 1px solid;
-    display: flex;
-}
-
-.read-more:hover {
-    cursor: pointer;
-    background-color: white;
-    transition: background-color 2s, color 500ms, font-size 500ms linear;
-    color: black;
-}
-
-.read-more:visited {
-  background-color: initial;
+    line-height: 25px;
 }
 
 .mat-action-row {
   padding: 0px;
+}
+
+.mat-card-actions {
+padding: 0px;
+}
+.mat-button {
+  padding: 1px 6px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 290px) {
+  .project-card {
+    max-width: 200px;
+  }
 }
