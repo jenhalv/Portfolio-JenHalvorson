@@ -1,7 +1,65 @@
+@import 'https://fonts.googleapis.com/css?family=Material+Icons';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@1,300&family=Julius+Sans+One&family=Mr+De+Haviland&family=Pontano+Sans&family=Raleway:wght@300&family=Tenor+Sans&family=Trirong:wght@300&display=swap');
+
+//changing colors of mat-card backgrounds
+// @keyframes backgroundColorPalette {
+//   0% {
+//     background: #ee6055;
+//   }
+//   25% {
+//     background: #60d394;
+//   }
+//   50% {
+//     background: #aaf683;
+//   }
+//   75% {
+//     background: #ffd97d;
+//   }
+//   100% {
+//     background: #ff9b85;
+//   }
+// }
+
+@keyframes backgroundColorPalette {
+  0% {
+    background: #d0d0d0;
+  }
+  25% {
+    background: #d0d0d0;;
+  }
+  50% {
+    background: #efefef;
+  }
+  75% {
+    background: #efefef;
+  }
+  100% {
+    background: #efefef;
+  }
+}
+
+
+// font-family: 'Abril Fatface', cursive;
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Julius Sans One', sans-serif;
+// font-family: 'Mr De Haviland', cursive;
+// font-family: 'Pontano Sans', sans-serif;
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Tenor Sans', sans-serif;
+// font-family: 'Trirong', serif;
+
 html, body {
-  // height: 100%;
-  margin: 0;
-  font-family: 'Special Elite';
+  height: 100%;
+  margin: 45px 0px 0px 0px;
+  scroll-behavior: smooth;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.jump {
+  margin-top: -200px;
+  padding-top: 200px;
 }
 
 .coming-soon {
@@ -53,10 +111,7 @@ html, body {
 @media only screen and (max-width: 325px) {
 }
 
-@media only screen and (max-width: 405px) {
-  .narrow {
-    display: block
-  }
+@media only screen and (max-width: 450px) {
 }
 
 @media only screen and (max-width: 490px) {

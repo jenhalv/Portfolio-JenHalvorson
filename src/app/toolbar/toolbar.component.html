@@ -1,10 +1,70 @@
-<mat-toolbar>
-  <a routerLink="">
+<mat-toolbar ngxHideOnScroll [propertyUsedToHide]="'top'" [valueWhenHidden]="'-100px'" [valueWhenShown]="'0px'">
+    <mat-toolbar-row>
 
-    <img alt="Flashing lightbulb"
-      src="../../../assets/personal-photos/lightbulb_animation.gif"/>
+  <a routerLink="" routerLinkActive="home-page" class="home-page" [routerLinkActiveOptions]="{exact:true}">
 
-    <div class="welcome">Jennifer <span class="narrow2"></span>Halvorson's <span class="narrow1"></span>Portfolio</div>
+      <img alt="Flashing lightbulb"
+        src="../../../assets/personal-photos/lightbulb_animation.gif"/>
 
+      <div class="welcome"><p>JENNIFER</p><p> HALVORSON</p></div>
+      <!-- <div class="welcome"><p>Jennifer</p><p> Halvorson</p></div> -->
   </a>
+
+
+    <span class="spacer"></span>
+
+
+      <app-sidenav></app-sidenav>
+
+      <div fxShow="true" fxHide.lt-md="true" class="home-page">
+
+        <p class="navigation">
+          <span (click)="onClickScroll('projects')" class="material-icons-outlined" alt="projects">devices</span>
+          Projects
+        </p>
+
+        <p class="navigation">
+            <span (click)="onClickScroll('education')" class="material-icons-outlined" alt="education">school</span>
+            Education
+        </p>
+
+        <p class="navigation">
+            <span (click)="onClickScroll('employment')" class="material-icons-outlined" alt="employment">article</span>
+            Employment
+        </p>
+
+        <p class="navigation">
+            <span (click)="onClickScroll('contact')" class="material-icons-outlined" alt="contact">alternate_email</span>
+            Contact
+        </p>
+
+      </div>
+
+  </mat-toolbar-row>
 </mat-toolbar>
+
+<!-- //ORIGINAL
+<div fxShow="true" fxHide.lt-md="true" class="home-page">
+
+    <a class="navigation" routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"aria-label="projects page">
+      <span class="material-icons-outlined" alt="projects">devices</span>
+      Projects
+    </a>
+
+    <a class="navigation" routerLink="/education" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"aria-label="education page">
+        <span class="material-icons-outlined" alt="education">school</span>Education
+    </a>
+
+    <a class="navigation" routerLink="/employment" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"aria-label="employment page">
+      <span class="material-icons-outlined" alt="employment">article</span>Employment
+    </a>
+
+    <a class="navigation" routerLink="/articles" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"aria-label="articles page">
+      <span class="material-icons-outlined" alt="articles">rss_feed</span>Articles
+    </a>
+
+    <a class="navigation" routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"aria-label="contact page">
+      <span class="material-icons-outlined" alt="contact">alternate_email</span>Contact
+    </a>
+
+  </div> -->

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor() { }
+  @Output() public sidenavToggle = new EventEmitter();
 
-  ngOnInit(): void {
+  constructor(private viewportScroller: ViewportScroller) { }
+
+  // tslint:disable-next-line:typedef
+  ngOnInit() {
+  }
+  public onToggleSidenav = () => {
+    this.sidenavToggle.emit();
   }
 
+  onClickScroll(elementId: string): void {
+    this.viewportScroller.scrollToAnchor(elementId);
+  }
 }

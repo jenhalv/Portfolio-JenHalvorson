@@ -1,0 +1,81 @@
+<div fxShow="true" fxHide.gt-sm="true">
+
+  <button class="small-icon" mat-icon-button [matMenuTriggerFor]="menu" alt="side navigation bar" aria-label="website menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+   <mat-menu class="matMenu" #menu="matMenu">
+
+  <button class="mat-menu-item" mat-menu-item (click)="onClickScroll('home')" alt="home page" aria-label="home page">
+      <span class="material-icons-outlined" alt="projects">home</span>
+  </button>
+
+  <button mat-menu-item (click)="onClickScroll('projects')" alt="projects page" aria-label="projects page">
+    <span class="material-icons-outlined" alt="projects">devices</span>
+    <span class="menu-links">Projects</span>
+  </button>
+
+  <button mat-menu-item (click)="onClickScroll('education')" alt="education" aria-label="education page" >
+    <span class="material-icons-outlined" alt="education">school</span>
+    <span class="menu-links">Education</span>
+  </button>
+
+  <button mat-menu-item (click)="onClickScroll('employment')" alt="employment page" aria-label="employment page">
+    <span class="material-icons-outlined" alt="employment">article</span>
+    <span class="menu-links">Employment</span>
+  </button>
+
+  <!-- <button mat-menu-item routerLink="/articles" alt="articles page" aria-label="articles page" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+    <span class="material-icons-outlined" alt="articles">rss_feed</span>
+    <span class="menu-links">Articles</span>
+  </button> -->
+
+  <button mat-menu-item (click)="onClickScroll('contact')" alt="contact page" aria-label="contact page">
+    <span class="material-icons-outlined" alt="articles">alternate_email</span>
+    <span class="menu-links">Contact</span>
+  </button>
+
+</mat-menu>
+</div>
+
+
+<!-- //ORIGINAL
+<div fxShow="true" fxHide.gt-sm="true">
+
+  <button class="small-icon" mat-icon-button [matMenuTriggerFor]="menu" alt="side navigation bar" aria-label="website menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+   <mat-menu class="matMenu" #menu="matMenu">
+
+  <button class="mat-menu-item" mat-menu-item routerLink="" alt="home page" aria-label="home page" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">
+    <mat-icon>home</mat-icon>
+  </button>
+
+  <button mat-menu-item routerLink="/projects" alt="projects page" aria-label="projects page" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+    <span class="material-icons-outlined" alt="projects">devices</span>
+    <span class="menu-links">Projects</span>
+  </button>
+
+  <button mat-menu-item routerLink="/education" alt="education" aria-label="education page" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">
+    <span class="material-icons-outlined" alt="education">school</span>
+    <span class="menu-links">Education</span>
+  </button>
+
+  <button mat-menu-item routerLink="/employment" alt="employment page" aria-label="employment page" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+    <span class="material-icons-outlined" alt="employment">article</span>
+    <span class="menu-links">Employment</span>
+  </button>
+
+  <button mat-menu-item routerLink="/articles" alt="articles page" aria-label="articles page" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+    <span class="material-icons-outlined" alt="articles">rss_feed</span>
+    <span class="menu-links">Articles</span>
+  </button>
+
+  <button mat-menu-item routerLink="/contact" alt="contact page" aria-label="contact page" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+    <span class="material-icons-outlined" alt="articles">alternate_email</span>
+    <span class="menu-links">Contact</span>
+  </button>
+
+</mat-menu>
+</div> -->

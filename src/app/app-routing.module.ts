@@ -6,29 +6,24 @@ import { EmploymentComponent } from './about/employment/employment.component';
 import { SkillsComponent } from './about/skills/skills.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProjectsComponent } from './about/projects/projects.component';
-import { MatCardComponent } from './mat-card/mat-card.component';
 
 const routes: Routes = [
-  {
-    path: 'education',
-    component: EducationComponent
-  },
-  {
-    path: 'employment',
-    component: EmploymentComponent
-  },
-  {
-    path: 'projects',
-    component: ProjectsComponent
-  },
-  {
-    path: 'skills',
-    component: SkillsComponent
-  },
-  {
-    path: 'mat-card',
-    component: MatCardComponent
-  },
+  // {
+  //   path: 'education',
+  //   component: EducationComponent
+  // },
+  // {
+  //   path: 'employment',
+  //   component: EmploymentComponent
+  // },
+  // {
+  //   path: 'projects',
+  //   component: ProjectsComponent
+  // },
+  // {
+  //   path: 'skills',
+  //   component: SkillsComponent
+  // },
   {
     path: '',
     component: LandingPageComponent

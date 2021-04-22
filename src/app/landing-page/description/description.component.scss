@@ -1,71 +1,11 @@
-.card-container {
-  max-width: 1050px;
-display: flex;
-margin: auto;
-justify-content: space-around;
-align-items: center;
-align-content: center;
-flex-wrap: wrap;
-}
-
-.experience {
-  width: 330px;
-  color: #eeeeee;
-  background-color:#1a2d42;
-  border: 5px solid white;
-  border-radius: 0px;
-  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.experience-title {
-  font-size: 25px;
-  text-align: left;
-}
-
-//List of experience
-ul {
-  list-style: none;
-  padding-left: 10px;
-  line-height: 40px;
-  text-align: left;
-  font-size: 21px;
-  margin: 0px;
-}
-
-//Colored Checkmarks
-ul li:before {
-  content: '✓';
-  color: #08c3d5;
-  padding-right: 5px;
-}
-
-.photo {
-    width: 224px;
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-.personal-pic {
-  margin: 10px;
-  width: 224px;
-  border: 5px solid white;
-  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .frontend-title {
-  // font-family: 'Courier New', Courier, monospace;
   font-family: 'Special Elite';
   font-size: 25px;
   line-height: 29px;
@@ -73,10 +13,9 @@ ul li:before {
   color: white;
 }
 
-.tools {
-  width: 330px;
+mat-card {
   color: #eeeeee;
-  background-color:#1a2d42;
+  // background-color:#1a2d42;
   border: 5px solid white;
   border-radius: 0px;
   box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
@@ -95,16 +34,55 @@ ul li:before {
   padding: 7px;
 }
 
-@media only screen and (max-width: 300px) {
-  .narrow2 {
-    display: block
-    }
-}
-@media only screen and (max-width: 350px) {
-  .narrow1 {
-    display: block
-  }
-  .narrow2 {
-    display: block
-    }
-}
+
+// //
+// div {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-wrap: wrap;
+// }
+
+// .frontend-title {
+//   font-family: 'Special Elite';
+//   font-size: 25px;
+//   line-height: 29px;
+//   text-align: center;
+//   color: white;
+// }
+
+// .tools {
+//   width: 330px;
+//   color: #eeeeee;
+//   background-color:#1a2d42;
+//   border: 5px solid white;
+//   border-radius: 0px;
+//   box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
+//   justify-content: space-around;
+//   align-items: center;
+//   align-content: center;
+//   text-align: center;
+//   flex-wrap: wrap;
+//   margin-top: 5px;
+//   margin-bottom: 5px;
+//   margin-left: 5px;
+//   margin-right: 5px;
+// }
+// .icon {
+//   width: 60px;
+//   padding: 7px;
+// }
+
+// @media only screen and (max-width: 300px) {
+//   .narrow2 {
+//     display: block
+//     }
+// }
+// @media only screen and (max-width: 350px) {
+//   .narrow1 {
+//     display: block
+//   }
+//   .narrow2 {
+//     display: block
+//     }
+// }
