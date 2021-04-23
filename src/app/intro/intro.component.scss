@@ -4,15 +4,12 @@ mat-card {
   padding: 15px;
   overflow-wrap: break-word;
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: auto;
   transition: 2s ease;
   animation-name: backgroundColorPalette;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  text-align: center;
 }
 
 .mat-card>:last-child:not(.mat-card-footer), .mat-card-content>:last-child:not(.mat-card-footer) {
