@@ -87,6 +87,10 @@ section {
   padding: 10px 5px 0px 0px;
 }
 
+.cdk-overlay-container{
+  z-index:999; //lower then fixed header z-index so it goes behind it
+}
+
 @media only screen and (max-width: 480px) {
   .icon {
     width: 50px;

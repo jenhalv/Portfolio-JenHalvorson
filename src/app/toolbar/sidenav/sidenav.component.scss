@@ -1,13 +1,12 @@
+div {
+  position: absolute;
+}
+
 .matMenu {
   padding: 0px;
   background: white;
   padding-top: 0px;
   padding-bottom: 0px;
-}
-
-.small-icon {
-  background: white;
-  margin-right: 10px;
 }
 
 .mat-menu-item {
@@ -55,4 +54,12 @@ button.active {
   opacity: 0.7;
 }
 
+:host ::ng-deep .cdk-overlay-container {
+  position: absolute;
+  z-index:2000 !important; //higher then fixed header z-index so it comes above
+}
 
+:host ::ng-deep .mat-menu-panel {
+  position: absolute
+  top: 0;
+}

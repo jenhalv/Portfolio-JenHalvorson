@@ -35,8 +35,10 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { ProjectCardComponent } from './about/projects/project-card/project-card.component';
 import { SafePipeModule } from 'safe-pipe';
 import { SidenavComponent } from './toolbar/sidenav/sidenav.component';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
+import { LayoutModule } from '@angular/cdk/layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { IntroComponent } from './intro/intro.component';
 import { ContactComponent } from './contact/contact.component';
@@ -53,6 +55,7 @@ const ANGULAR_MATERIAL_MODULES = [
   MatCardModule,
   MatButtonModule,
   MatGridListModule,
+  MatDividerModule,
   MatExpansionModule
 ];
 
@@ -83,6 +86,7 @@ const ANGULAR_MATERIAL_MODULES = [
     NgxHideOnScrollModule,
     MatSidenavModule,
     FlexLayoutModule,
+    LayoutModule,
     FormsModule,
     NgImageSliderModule,
     FontAwesomeModule,
