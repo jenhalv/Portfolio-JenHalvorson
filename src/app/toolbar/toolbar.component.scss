@@ -9,31 +9,23 @@
 }
 
 mat-toolbar {
+  height: 65px;
   width: 100%;
   background-color: #1a2d42;
   align-items: center;
   justify-content: space-around;
   align-content: center;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
   z-index: 1000;
-  left: 0;
-  top: 0;
-  position: fixed;
-}
-
-.welcome {
-  font-size: 30px;
-  display: flex;
-  color: white;
-  margin-top: 5px;
-  font-weight: bold;
-  text-align: left;
-  font-family: 'Tenor Sans', sans-serif;
 }
 
 p {
-  padding: 0px 5px;
-  margin: 0px;
+  font-size: 30px;
+  text-align: left;
+  font-family: 'Tenor Sans', sans-serif;
+  margin: auto;
 }
 
 img {
@@ -46,23 +38,17 @@ img {
   width: 85px;
 }
 
-.mat-toolbar-row, .mat-toolbar-single-row {
-  padding: 1px 5px;
-}
-
-a {
+div {
   display: flex;
-  align-items: center;
-  text-decoration: none;
 }
 
-.navigation:hover {
+a:hover {
   background-color: #1a2d42;
   cursor: pointer;
   color: #ece4df;
 }
 
-.navigation:focus {
+a:focus {
   background-color: #1a2d42;
   cursor: context-menu;
   color: #ece4df;
@@ -88,12 +74,14 @@ a.home-page {
 
 .home-page {
   display: flex;
+  text-decoration: none;
 }
 
-.navigation {
+a {
   display: block;
   color: white;
   font-size: 14px;
+  padding: 0px 5px;
 }
 
 .spacer {

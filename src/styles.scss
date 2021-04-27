@@ -76,6 +76,31 @@ html, body {
   margin: 10px;
 }
 
+section {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.icon {
+  width: 60px;
+  padding: 10px 5px 0px 0px;
+}
+
+@media only screen and (max-width: 480px) {
+  .icon {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 416px) {
+  .icon {
+    width: 35px;
+  }
+}
+
+
+
 // .card-container {
 //   display: flex;
 //   margin: auto;
@@ -91,13 +116,13 @@ html, body {
 //   border-radius: 0px;
 // }
 
-// mat-card-image {
-//   margin-top: 0px;
-// }
+mat-card-image {
+  margin-top: 0px;
+}
 
-// .mat-card-image:first-child {
-//   margin-top: 0px;
-// }
+mat-card-image:first-child {
+  margin-top: 0px;
+}
 
 // img {
 //     height: 100%;
