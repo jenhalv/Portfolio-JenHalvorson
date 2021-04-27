@@ -1,11 +1,16 @@
+div {
+  justify-content: center;
+  display: flex;
+}
+
 mat-card {
   max-width: 800px;
   color: black;
   background-color:  #efefef;
-  margin: 45px auto;
   transition: 2s ease;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 22px;
+  margin: 45px 10px 100px 10px;
 }
 
 mat-card:hover {

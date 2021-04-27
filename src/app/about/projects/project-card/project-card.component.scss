@@ -1,6 +1,9 @@
 .card-container {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1500px;
+  margin: auto;
+  justify-content: center;
 }
 
 section {
@@ -25,7 +28,7 @@ a:visited {
 
 mat-card {
   width: 400px;
-  margin: 15px auto;
+  margin: 25px;
   border: black 1px solid;
   padding: 10px;
 }
@@ -82,7 +85,6 @@ mat-card-subtitle {
 }
 
 .computer-image {
-  margin: auto;
   max-width: 350px;
   height: 100%;
 }
@@ -130,7 +132,7 @@ p {
 /* Responsive Styles */
 @media only screen and (max-width: 320px) {
   mat-card {
-    max-width: 200px;
+    margin: 5px;
   }
 }
 

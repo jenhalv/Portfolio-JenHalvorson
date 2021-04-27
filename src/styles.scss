@@ -4,23 +4,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@1,300&family=Julius+Sans+One&family=Mr+De+Haviland&family=Pontano+Sans&family=Raleway:wght@300&family=Tenor+Sans&family=Trirong:wght@300&display=swap');
 
 //changing colors of mat-card backgrounds
-// @keyframes backgroundColorPalette {
-//   0% {
-//     background: #ee6055;
-//   }
-//   25% {
-//     background: #60d394;
-//   }
-//   50% {
-//     background: #aaf683;
-//   }
-//   75% {
-//     background: #ffd97d;
-//   }
-//   100% {
-//     background: #ff9b85;
-//   }
-// }
+@keyframes backgroundColorPaletteA {
+  0% {
+    background: #ee6055;
+  }
+  25% {
+    background: #60d394;
+  }
+  50% {
+    background: #aaf683;
+  }
+  75% {
+    background: #ffd97d;
+  }
+  100% {
+    background: #ff9b85;
+  }
+}
 
 @keyframes backgroundColorPalette {
   0% {
@@ -52,13 +52,40 @@
 
 html, body {
   height: 100%;
-  margin: 45px 0px 0px 0px;
   scroll-behavior: smooth;
   font-family: 'Josefin Sans', sans-serif;
 }
 
+body {
+  margin: 33px 15px 15px 15px;
+}
+
+h1 {
+  font-size: 38px;
+  text-align: center;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h3 {
+  font-size: 21px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  text-align: left;
+  margin: 25px 0px 5px 20px;
+}
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+hr {
+ margin: 30px 10px;
+}
+
 .jump {
-  margin-top: -200px;
+  margin-top: -150px;
   padding-top: 200px;
 }
 
@@ -87,8 +114,15 @@ section {
   padding: 10px 5px 0px 0px;
 }
 
+body .mat-menu-content {
+  position: fixed;
+}
+
+.mat-menu-content:not(:empty) {
+  padding-top: 1px !important;
+}
 .cdk-overlay-container{
-  z-index:999; //lower then fixed header z-index so it goes behind it
+  padding-top: 32px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -124,8 +158,8 @@ mat-card-image {
   margin-top: 0px;
 }
 
-mat-card-image:first-child {
-  margin-top: 0px;
+mat-card>:first-child, mat-card-content>:first-child {
+ margin-top: auto;
 }
 
 // img {

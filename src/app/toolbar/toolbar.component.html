@@ -3,16 +3,15 @@
 
         <app-sidenav></app-sidenav>
 
-  <a routerLink="" routerLinkActive="home-page" class="home-page" [routerLinkActiveOptions]="{exact:true}">
+  <a (click)="onClickScroll('home')" class="home-page">
 
-      <img alt="Flashing lightbulb" (click)="onClickScroll('home')" fxShow="true" fxHide.lt-md="true" src="../../../assets/personal-photos/lightbulb_animation.gif"/>
+      <img alt="Flashing lightbulb" fxShow="true" fxHide.lt-md="true" src="../../../assets/personal-photos/lightbulb_animation.gif"/>
 
         <!-- <img alt="Lightbulb" (click)="onClickScroll('home')" fxShow="true" fxHide.lt-md="true" src="../../../assets/lightbulb_white.png"/> -->
         <!-- <a class="navigation">
             <span (click)="onClickScroll('home')" class="material-icons-outlined" alt="projects">lightbulb</span>
           </a> -->
-  
-          <div class="jump" id="home"></div>
+
       <p>JENNIFER HALVORSON</p>
 
   </a>

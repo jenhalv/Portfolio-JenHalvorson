@@ -1,79 +1,79 @@
-h1 {
-  text-align: left;
-  margin: 5px auto;
-}
-
-.pic-container {
-  max-width: 875px;
-  display: flex;
+.education {
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: 4s ease;
+  animation-name: backgroundColorPalette;
+  animation-duration: 10s;
+  max-width: 1300px;
   margin: auto;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
 }
 
-.jen-pic {
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 550px;
+  margin: 5px auto 45px auto;
+  justify-content: center;
+  border: 5px black solid;
+}
+
+img {
+  margin: auto;
+}
+
+.jen-image {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
   width: 245px;
-  margin: auto;
-  margin: 10px;
 }
 
-.education-content {
-  max-width: 500px;
+section {
   margin: 0px;
-  padding: 5px;
-  font-size: 16px;
-  text-align: left;
+  align-self: center;
+}
+
+h1 {
+  padding: 15px 5px 0px 5px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.color-container {
+  display: block;
 }
 
 .education-container {
-  max-width: 700px;
-  margin-bottom: 25px;
-  padding: 15px;
+  max-width: 900px;
   display: flex;
-  margin: auto;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
-}
+  justify-content: center;
+  margin: 25px auto;
+  padding: 10px;
+  }
 
 .education-image {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
-  width: 250px;
+  width: 200px;
 }
 
-.mat-card>:last-child:not(.mat-card-footer), .mat-card-content>:last-child:not(.mat-card-footer) {
-  margin-bottom: 10px;
+mat-card {
+  padding: 0px;
+  align-self: center;
 }
-
-.mat-card[_ngcontent-mvb-c128] > [_ngcontent-mvb-c128]:last-child:not(.mat-card-footer), .mat-card-content[_ngcontent-mvb-c128] > [_ngcontent-mvb-c128]:last-child:not(.mat-card-footer) {
-  margin-bottom: 0px;
- }
-
-a {
-  text-decoration: none;
+.courses-image {
+  width: 150px;
+  padding: 10px;
 }
 
 @media only screen and (max-width: 325px) {
-  .jen-pic {
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+  .jen-image {
     width: 225px;
-    margin: auto;
-    margin: 5px;
   }
 }
 
 @media only screen and (max-width: 290px) {
-  .jen-pic {
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+  .jen-image {
     width: 165px;
-    margin: auto;
-    margin: 5px;
   }
 }
