@@ -16,6 +16,12 @@ div {
   display: none;
 }
 
+a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 a:-webkit-any-link {
   color: black;
 }
@@ -32,7 +38,6 @@ mat-card {
 }
 
 mat-card:hover {
-  cursor: pointer;
   background-color: #d0d0d0;
   transition: background-color 2s, color 500ms, font-size 500ms linear;
   color: #1a2d42;
