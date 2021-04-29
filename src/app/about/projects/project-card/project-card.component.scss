@@ -1,21 +1,19 @@
-.card-container {
-  display: flex;
+div {
   flex-wrap: wrap;
-  max-width: 1500px;
   margin: auto;
   justify-content: center;
+  font-family: 'Tenor Sans', sans-serif;
+  align-content: center;
+  align-items: center;
+  display: flex;
 }
 
-section {
-  display: block;
+.card-container {
+  max-width: 1500px;
 }
 
 .invisible {
   display: none;
-}
-
-a {
-  color: black;
 }
 
 a:-webkit-any-link {
@@ -41,8 +39,7 @@ mat-card:hover {
 }
 
 mat-card-title {
-  margin: auto;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 mat-card-header {
@@ -66,12 +63,16 @@ mat-card-header {
   text-align: center;
 }
 
-.mat-card-image:first-child {
-  margin-top: 0px;
+.mat-card-image {
+  margin: auto  !important;
 }
 
-.info {
-  display: flex;
+.mat-card-image[_ngcontent-nup-c139]:first-child {
+  margin: auto !important;
+}
+
+.mat-card>:first-child, mat-card-content>:first-child {
+ margin: auto  !important;
 }
 
 mat-card-subtitle {
@@ -108,7 +109,7 @@ mat-card-content {
     color: white;
     cursor: pointer;
     background-color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Tenor Sans', sans-serif;
     line-height: 25px;
 }
 
@@ -130,20 +131,18 @@ p {
 
 
 /* Responsive Styles */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 389px) {
   mat-card {
-    margin: 5px;
+    margin: 25px 5px;
+    max-width: 300px;
+  }
+  .mat-card-title {
+    font-size: 21px;
   }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 400px) {
  .computer-image {
     max-width: 250px;
-  }
-}
-
-@media only screen and (max-width: 750px){
-  .info {
-    display: block;
   }
 }

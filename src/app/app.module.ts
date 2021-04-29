@@ -43,6 +43,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { IntroComponent } from './intro/intro.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
+import { TextComponent } from './contact-me/text/text.component';
+import { EmailComponent } from './contact-me/email/email.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -78,7 +80,9 @@ const ANGULAR_MATERIAL_MODULES = [
     ProjectCardComponent,
     SidenavComponent,
     IntroComponent,
-    ContactComponent
+    ContactComponent,
+    TextComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,

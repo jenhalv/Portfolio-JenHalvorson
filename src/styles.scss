@@ -53,11 +53,17 @@
 html, body {
   height: 100%;
   scroll-behavior: smooth;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Tenor Sans', sans-serif;
 }
 
 body {
   margin: 33px 15px 15px 15px;
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 h1 {
@@ -67,12 +73,22 @@ h1 {
   margin-block-end: 0em;
 }
 
+h2 {
+  margin-block-start: 1em;
+  margin-block-end: .5em;
+  text-align: center;
+}
+
 h3 {
   font-size: 21px;
   margin-block-start: 0em;
   margin-block-end: 0em;
   text-align: left;
   margin: 25px 0px 5px 20px;
+}
+
+.mat-card-header .mat-card-title {
+  margin: 5px  !important;
 }
 
 p {
@@ -94,7 +110,8 @@ hr {
     text-align: center;
     color: red;
     font-weight: bold;
-    font-family: 'Special Elite'
+    font-family: 'Special Elite';
+    line-height: 45px;
   }
 
 .jen-pics{
@@ -114,6 +131,17 @@ section {
   padding: 10px 5px 0px 0px;
 }
 
+.fa {
+  font-size: 40px;
+  padding: 10px 20px 0px 20px;
+  text-decoration: none;
+  color: #1a2d42;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
 body .mat-menu-content {
   position: fixed;
 }
@@ -123,6 +151,14 @@ body .mat-menu-content {
 }
 .cdk-overlay-container{
   padding-top: 32px;
+}
+
+.row {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 @media only screen and (max-width: 480px) {
@@ -154,13 +190,17 @@ body .mat-menu-content {
 //   border-radius: 0px;
 // }
 
-mat-card-image {
-  margin-top: 0px;
-}
+// mat-card-image {
+//   margin: auto  !important;
+// }
 
-mat-card>:first-child, mat-card-content>:first-child {
- margin-top: auto;
-}
+// .mat-card-image[_ngcontent-nup-c139]:first-child {
+//   margin: auto !important;
+// }
+
+// mat-card>:first-child, mat-card-content>:first-child {
+//  margin: auto  !important;
+// }
 
 // img {
 //     height: 100%;

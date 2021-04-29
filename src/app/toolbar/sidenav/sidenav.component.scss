@@ -1,6 +1,6 @@
 .small-icon {
-  background: #ece4df;
-  margin-right: 10px;
+  margin-right: 5px;
+  background-color: white !important;
 }
 
 .matMenu {
@@ -13,6 +13,7 @@
 .mat-menu-item {
   height: 50px;
   font-size: 15px;
+  font-family: 'Tenor Sans', sans-serif;
   background-color: white;
   border-bottom: #1a2d42 1px solid;
   border-right: #1a2d42 1px solid;
@@ -23,6 +24,10 @@
   padding: 0px;
 }
 
+mat-icon-button {
+  background-color: white;
+}
+
 .material-icons-outlined {
   vertical-align: middle;
 }
@@ -30,7 +35,7 @@
 .menu-links{
   font-weight: 700;
   padding-left: 15px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Tenor Sans', sans-serif;
 }
 
 button {

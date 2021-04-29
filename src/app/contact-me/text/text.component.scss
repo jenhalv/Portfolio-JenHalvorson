@@ -1,0 +1,32 @@
+mat-card {
+  box-shadow: none;
+  background-color: transparent;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+mat-card-subtitle {
+  font-weight: 100;
+}
+
+.mat-card-content {
+  margin-bottom: 0px;
+  text-align: right;
+}
+
+a {
+  font-weight: bold;
+}
+
+.fa {
+  padding: 0px 20px;
+}
+
+.fa-mobile {
+  font-size: 60px;
+}
+
+a:hover {
+  opacity: 0.7;
+}

@@ -1,8 +1,9 @@
 footer {
   text-align: center;
-  background-color:  #efefef;
+  background-color: #efefef;
   bottom: 0;
   left: 0;
+  padding-top: 15px;
 }
 
 .material-icons-outlined {
@@ -29,18 +30,3 @@ p {
   color: #1a2d42;
 }
 
-.fa {
-  font-size: 40px;
-  padding: 10px 20px 0px 20px;
-  text-decoration: none;
-  color: #1a2d42;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-mobile {
-  font-size: 55px;
-  vertical-align: -5px;
-}

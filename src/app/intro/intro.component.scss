@@ -1,4 +1,9 @@
-div {
+.jump {
+  margin-top: -100px;
+  padding-top: 90px;
+}
+
+.intro {
   margin: 10px;
   padding: 10px;
   transition: 2s ease;
@@ -6,6 +11,14 @@ div {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  justify-content: center;
+  display: flex;
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+.icons {
+  text-align: center;
+  padding: 20px;
 }
 
 mat-card {
@@ -15,16 +28,17 @@ mat-card {
   padding: 15px;
   overflow-wrap: break-word;
   display: flex;
-  margin: auto;
   background-color: transparent;
+  align-items: center;
+  font-family: 'Tenor Sans', sans-serif;
 }
 
 .mat-card>:last-child:not(.mat-card-footer), .mat-card-content>:last-child:not(.mat-card-footer) {
-  margin-bottom: auto;
+  margin: 10px auto;
 }
 
 .mat-card>:first-child, .mat-card-content>:first-child {
-  margin: auto;
+  margin: 10px auto;
 }
 
 section {
@@ -34,25 +48,21 @@ section {
 }
 
 .icon {
-  width: 60px;
+  width: 40px;
   padding: 10px 5px 0px 0px;
 }
 
-p {
-  font-size: 35px;
-  margin: auto;
-  font-family: "Mr De Haviland", cursive;
-}
+// p {
+//   font-size: 35px;
+//   margin: auto;
+//   font-family: "Mr De Haviland", cursive;
+// }
 
 .jen {
   margin: auto;
   width: 224px;
   border: 5px solid white;
   box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-  text-align: left;
 }
 
 @media only screen and (max-width: 710px) {
@@ -68,11 +78,14 @@ h3 {
   .icon {
     width: 50px;
   }
+  .icons {
+    padding: 5px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
   h1 {
-  font-size: 30px;
+  font-size: 28px;
 }
 }
 

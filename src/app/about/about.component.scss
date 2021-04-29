@@ -1,6 +1,7 @@
 div {
   justify-content: center;
   display: flex;
+  font-family: 'Tenor Sans', sans-serif;
 }
 
 mat-card {
@@ -9,7 +10,7 @@ mat-card {
   background-color:  #efefef;
   transition: 2s ease;
   font-size: 20px;
-  line-height: 22px;
+  line-height: 24px;
   margin: 45px 10px 100px 10px;
 }
 
@@ -28,9 +29,7 @@ mat-card-title {
 }
 
 a {
-  color: black;
   font-weight: bold;
-  text-decoration: none;
 }
 
 a:hover {

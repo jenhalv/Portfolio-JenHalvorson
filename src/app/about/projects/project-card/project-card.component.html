@@ -10,7 +10,6 @@
     </mat-card-header>
 
     <div class="info">
-      <section>
         <img mat-card-image class="computer-image" [src]="card.image" [alt]="card.imageAlt"/>
 
       <div>
@@ -23,7 +22,7 @@
         <img  [ngClass]="{'invisible': card.icon7 === 0}" class="icon"  [src]="card.icon7" [alt]="card.icon7Alt"/>
         <img  [ngClass]="{'invisible': card.icon8 === 0}" class="icon"  [src]="card.icon8" [alt]="card.icon8Alt"/>
       </div>
-      </section>
+
         <!-- <mat-card-content [innerHTML]="card.content"></mat-card-content> -->
     </div>
 
