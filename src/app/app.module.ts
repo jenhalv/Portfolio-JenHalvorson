@@ -37,6 +37,7 @@ import { SafePipeModule } from 'safe-pipe';
 import { SidenavComponent } from './toolbar/sidenav/sidenav.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { LayoutModule } from '@angular/cdk/layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -45,6 +46,7 @@ import { ContactComponent } from './contact/contact.component';
 import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 import { TextComponent } from './contact-me/text/text.component';
 import { EmailComponent } from './contact-me/email/email.component';
+import { SavingsComponent } from './about/skills/savings/savings.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -58,7 +60,8 @@ const ANGULAR_MATERIAL_MODULES = [
   MatButtonModule,
   MatGridListModule,
   MatDividerModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatTabsModule
 ];
 
 @NgModule({
@@ -82,7 +85,8 @@ const ANGULAR_MATERIAL_MODULES = [
     IntroComponent,
     ContactComponent,
     TextComponent,
-    EmailComponent
+    EmailComponent,
+    SavingsComponent
   ],
   imports: [
     BrowserModule,

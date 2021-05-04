@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { CARDS } from '../../../cards';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @Component({
   selector: 'app-project-card',
@@ -8,6 +9,11 @@ import { CARDS } from '../../../cards';
 })
 export class ProjectCardComponent implements OnInit {
   @Input() card: CARDS;
+  panelOpenState = false;
+
+  accordionList: any;
+
+  @ViewChild('accordion', {static: true}) Accordion: MatExpansionModule;
 
   CARDS = [
     {
@@ -43,7 +49,7 @@ export class ProjectCardComponent implements OnInit {
       subtitle: '<a href="https://my-todo-list-2021.web.app/">To Do List</a>',
       image: 'assets/projects-photos/Project_TD.png',
       imageAlt: 'To Do List App Website',
-      content: 'I was recently a mentor for ngGirls conference (ngconf 2021) and followed the Angular To-Do List App tutorial adding in my own flair. This tutorial breaks down how to:<ul><li>initialize your Todo application using Angular CLI,</li><li>generate components to represent individual variables & methods,</li><li>utilize a Todo DataService for saving and managing tasks,</li><li>add appealing style to improve user interface, and</li><li>deploy your application to GitHub & StackBlitz.</li></ul>This project was completed during an NGgirls conference in 2019.  I attended again in 2020 (virtually) and created another to-do list as well.  I had a great time networking with fellow Angular newbies and pros.  This project helped instill my basic knowledge of the angular platform.  I created a login and added my own flare with style. src="assets/projects-photos/Project_NG.png"',
+      content: 'In April 2021, I was a mentor for <a target="_blank" href="https://twitter.com/AngularGirls">ngGirls conference</a> (<a target="_blank" href="https://workshops.ng-girls.org/ngconf-2021/">ngconf 2021</a>)!<br><br>I followed the <a target="_blank" href="https://ng-girls.gitbook.io/todo-list-tutorial/">Angular To-Do List App tutorial</a> and had some fun adding in my own flair.<br><br>This tutorial breaks down how to:<ul><li>initialize your To Do application using Angular CLI,</li><li>generate components to represent individual variables & methods,</li><li>utilize a To Do DataService for saving and managing tasks,</li><li>add appealing style to improve user interface, and</li><li>deploy your application to GitHub & StackBlitz.</li></ul><br><br>In June 2019, I attended my first ngGirls conference & followed this same to do app tutorial.&nbsp;&nbsp;It included creating a login.<br><br><img src="https://firebasestorage.googleapis.com/v0/b/portfolio-jenhalvorson.appspot.com/o/Projects%2FToDo.jpg?alt=media&token=3cba5e11-f141-4f06-ae02-4e679b0e59b3"/><br><br>Check out my code on GitHub: <a target="_blank" href="https://github.com/jenhalv/To-Do-List-Angular-App">To-Do-List-Angular-App</a>',
       icon1: 'assets/experience-icons/Angular_Icon.png',
       icon1Alt: 'Angular Icon',
       icon2: 'assets/experience-icons/HTML_B.png',
