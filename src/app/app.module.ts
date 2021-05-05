@@ -17,7 +17,6 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { AboutComponent } from './about/about.component';
 import { EducationComponent } from './about/education/education.component';
 import { EmploymentComponent } from './about/employment/employment.component';
-import { ProjectsComponent } from './about/projects/projects.component';
 import { SkillsComponent } from './about/skills/skills.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,7 +31,6 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ReadMoreComponent } from './read-more/read-more.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { ProjectCardComponent } from './about/projects/project-card/project-card.component';
 import { SafePipeModule } from 'safe-pipe';
 import { SidenavComponent } from './toolbar/sidenav/sidenav.component';
 import { MatDividerModule } from '@angular/material/divider';
@@ -47,6 +45,10 @@ import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 import { TextComponent } from './contact-me/text/text.component';
 import { EmailComponent } from './contact-me/email/email.component';
 import { SavingsComponent } from './about/skills/savings/savings.component';
+
+import { MyProjectsComponent } from './my-projects/my-projects.component';
+import { LogoIconsComponent } from './my-projects/project-card/logo-icons/logo-icons.component';
+import { ProjectCardComponent } from './my-projects/project-card/project-card.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -78,15 +80,16 @@ const ANGULAR_MATERIAL_MODULES = [
     EmploymentComponent,
     SkillsComponent,
     EducationComponent,
-    ProjectsComponent,
     ReadMoreComponent,
-    ProjectCardComponent,
     SidenavComponent,
     IntroComponent,
     ContactComponent,
     TextComponent,
     EmailComponent,
-    SavingsComponent
+    SavingsComponent,
+    ProjectCardComponent,
+    MyProjectsComponent,
+    LogoIconsComponent
   ],
   imports: [
     BrowserModule,

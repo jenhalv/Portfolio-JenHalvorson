@@ -6,8 +6,9 @@ export interface CARDS {
   image: string;
   imageAlt: string;
   content: string;
-  icon1?: string | [];
-  icon2?: string | [];
-  icon3?: string | [];
-  icon4?: string | [];
+  icons: string;
+  iconUrl: string;
+  iconAlt: string;
+  add: string;
+  closed: boolean;
 }

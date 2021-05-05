@@ -5,7 +5,7 @@ import { EducationComponent } from './about/education/education.component';
 import { EmploymentComponent } from './about/employment/employment.component';
 import { SkillsComponent } from './about/skills/skills.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { ProjectsComponent } from './about/projects/projects.component';
+import { MyProjectsComponent } from './my-projects/my-projects.component';
 
 const routes: Routes = [
   // {
@@ -18,7 +18,7 @@ const routes: Routes = [
   // },
   // {
   //   path: 'projects',
-  //   component: ProjectsComponent
+  //   component: MyProjectsComponent
   // },
   // {
   //   path: 'skills',
