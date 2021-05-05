@@ -1,3 +1,9 @@
+.article {
+  overflow: hidden;
+  margin-bottom: 0px;
+  height: 78px;
+}
+
 div {
   flex-wrap: wrap;
   margin: auto;
@@ -6,6 +12,10 @@ div {
   align-content: center;
   align-items: flex-start;
   display: flex;
+}
+
+h3 {
+  margin: 25px auto 10px;
 }
 
 .info {
@@ -38,13 +48,23 @@ mat-card {
   width: 400px;
   margin: 25px;
   border: black 1px solid;
+  color:#999;
+  background-color: white;
+  transition: background-color 2s, color 500ms;
   padding: 10px;
 }
 
 mat-card:hover {
   background-color: #d0d0d0;
-  transition: background-color 2s, color 500ms, font-size 500ms linear;
+  transition: background-color 2s, color 500ms;
   color: #1a2d42;
+}
+
+.mat-card-footer {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 20px;
 }
 
 mat-card-title {
@@ -59,6 +79,10 @@ mat-card-header {
 
 :host ::ng-deep .mat-card-subtitle:not(:first-child):visited {
   color: black;
+}
+
+.mat-card-actions .mat-button, .mat-card-actions .mat-raised-button, .mat-card-actions .mat-stroked-button {
+  margin: 8px;
 }
 
 .header-image {
@@ -107,7 +131,6 @@ mat-card-subtitle {
 mat-card-content {
   padding: 10px;
   margin: auto;
-  max-width: 300px;
 }
 
 p {
