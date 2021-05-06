@@ -1,15 +1,14 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 import { CARDS } from '../../cards';
-import { LogoIconsComponent } from './logo-icons/logo-icons.component';
 
 @Component({
   selector: 'app-project-card',
   templateUrl: './project-card.component.html',
-  styleUrls: ['./project-card.component.scss']
+  styleUrls: ['./project-card.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ProjectCardComponent implements OnInit {
   @Input() card: CARDS;
-  @Input() LogoIconsComponent = [];
 
   CARDS = [
     {

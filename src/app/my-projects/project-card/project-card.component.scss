@@ -12,6 +12,7 @@ div {
   align-content: center;
   align-items: flex-start;
   display: flex;
+  font-family: 'Tenor Sans', sans-serif !important;
 }
 
 h3 {
@@ -45,7 +46,7 @@ a:visited {
 }
 
 mat-card {
-  width: 400px;
+  width: 800px;
   margin: 25px;
   border: black 1px solid;
   background-color: white;
@@ -120,6 +121,7 @@ mat-card-subtitle {
   font-size: 20px;
   margin: auto;
   padding: 5px 0px 15px 25px;
+  font-family: 'Tenor Sans', sans-serif !important;
 }
 
 :host ::ng-deep a:visited {
@@ -130,10 +132,6 @@ mat-card-subtitle {
   max-width: 350px;
   height: 100%;
   display: flex;
-}
-
-.icon {
-  width: 44px;
 }
 
 mat-card-content {
