@@ -1,4 +1,5 @@
 <div class="card-container">
+
     <mat-card *ngFor="let card of CARDS">
 
       <mat-card-header>
@@ -11,63 +12,15 @@
 
       <img mat-card-image class="computer-image" [src]="card.image" [alt]="card.imageAlt"/>
 
-      <mat-card-content [class.article]="!this.card.collapsed">
-        <h3>About:</h3>
-          <mat-card-content [innerHTML]="card.content"></mat-card-content>
+      <app-mat-tabs></app-mat-tabs>
+
+        <!-- <h3>About:</h3>
+          <mat-card-content [innerHTML]="card.content"></mat-card-content> -->
 
         <h3>Tools:</h3>
             <app-logo-icons [ICONS]="card.icons"></app-logo-icons>
 
         <mat-card-content [innerHTML]="card.add"></mat-card-content>
 
-      </mat-card-content>
-
-      <mat-card-actions align="end">
-          <button mat-button class="read-more" (click)="this.card.collapsed = !this.card.collapsed">Read {{ card.collapsed ? 'less &#x25b2;' : 'more &#x25bc;'}}</button>
-      </mat-card-actions>
     </mat-card>
   </div>
-
-
-
-  <!-- <div class="card-container">
-      <mat-card *ngFor="let card of CARDS">
-
-        <mat-card-header>
-          <div mat-card-avatar class="header-image">
-            <img mat-card-image [src]="card.logo" [alt]="card.logoAlt"/>
-          </div>
-            <mat-card-title>{{card.title}}</mat-card-title>
-            <mat-card-subtitle [innerHTML]="card.subtitle"></mat-card-subtitle>
-        </mat-card-header>
-          <img mat-card-image class="computer-image" [src]="card.image" [alt]="card.imageAlt"/>
-
-          <div class="info">
-            <p style="padding-left: 24px;">Tools Used:</p>
-          <div>
-            <img  [ngClass]="{'invisible': card.icon1 === 0}" class="icon"  [src]="card.icon1" [alt]="card.icon1Alt"/>
-            <img  [ngClass]="{'invisible': card.icon2 === 0}" class="icon"  [src]="card.icon2" [alt]="card.icon2Alt"/>
-            <img  [ngClass]="{'invisible': card.icon3 === 0}" class="icon"  [src]="card.icon3" [alt]="card.icon3Alt"/>
-            <img  [ngClass]="{'invisible': card.icon4 === 0}" class="icon"  [src]="card.icon4" [alt]="card.icon4Alt"/>
-            <img  [ngClass]="{'invisible': card.icon5 === 0}" class="icon"  [src]="card.icon5" [alt]="card.icon5Alt"/>
-            <img  [ngClass]="{'invisible': card.icon6 === 0}" class="icon"  [src]="card.icon6" [alt]="card.icon6Alt"/>
-            <img  [ngClass]="{'invisible': card.icon7 === 0}" class="icon"  [src]="card.icon7" [alt]="card.icon7Alt"/>
-            <img  [ngClass]="{'invisible': card.icon8 === 0}" class="icon"  [src]="card.icon8" [alt]="card.icon8Alt"/>
-          </div>
-
-          <mat-accordion>
-              <mat-expansion-panel (opened)="panelOpenState = true"
-                                   (closed)="panelOpenState = false" [expanded]="isExpanded">
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                     <p>About this App:</p>
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-                <mat-card-content [innerHTML]="card.content"></mat-card-content>
-              </mat-expansion-panel>
-            </mat-accordion>
-        </div>
-
-      </mat-card>
-    </div>
-     -->

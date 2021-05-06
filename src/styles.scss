@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined");
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@1,300&family=Julius+Sans+One&family=Mr+De+Haviland&family=Pontano+Sans&family=Raleway:wght@300&family=Tenor+Sans&family=Trirong:wght@300&display=swap');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 //changing colors of mat-card backgrounds
 @keyframes backgroundColorPaletteA {
@@ -96,7 +97,7 @@ p {
 }
 
 hr {
- margin: 30px 10px;
+ margin: 30px;
 }
 
 .jump {
