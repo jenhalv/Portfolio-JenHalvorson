@@ -5,22 +5,14 @@
   right: 0;
   z-index: 1000;
   background: fixed;
-  font-family: 'Tenor Sans', sans-serif;
 }
 
 mat-toolbar {
-  height: 65px;
   background-color: #1a2d42;
   justify-content: space-around;
   text-align: center;
   z-index: 1000;
-}
-
-.mat-toolbar-row, .mat-toolbar-single-row {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  padding: 0 10px;
+  font-family: 'Tenor Sans', sans-serif !important;
 }
 
 p {
@@ -84,6 +76,7 @@ a {
   display: block;
   color: white;
   font-size: 14px;
+  line-height: 10px;
 }
 
 .spacer {

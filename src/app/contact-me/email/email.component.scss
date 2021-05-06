@@ -4,6 +4,12 @@ mat-card {
   padding: 15px;
   display: flex;
   justify-content: center;
+  font-family: 'Tenor Sans', sans-serif !important;
+}
+
+mat-card-title {
+  margin-bottom: 4px;
+  font-size: 19px;
 }
 
 mat-card-subtitle {
