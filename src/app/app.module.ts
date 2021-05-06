@@ -40,17 +40,13 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { LayoutModule } from '@angular/cdk/layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { IntroComponent } from './intro/intro.component';
-import { ContactComponent } from './contact/contact.component';
 import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
-import { TextComponent } from './contact-me/text/text.component';
-import { EmailComponent } from './contact-me/email/email.component';
 import { SavingsComponent } from './about/skills/savings/savings.component';
 
 import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { LogoIconsComponent } from './my-projects/project-card/logo-icons/logo-icons.component';
 import { ProjectCardComponent } from './my-projects/project-card/project-card.component';
 import { DecorativeLinesComponent } from './decorative-lines/decorative-lines.component';
-import { MatTabsComponent } from './my-projects/project-card/mat-tabs/mat-tabs.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -85,15 +81,11 @@ const ANGULAR_MATERIAL_MODULES = [
     ReadMoreComponent,
     SidenavComponent,
     IntroComponent,
-    ContactComponent,
-    TextComponent,
-    EmailComponent,
     SavingsComponent,
     ProjectCardComponent,
     MyProjectsComponent,
     LogoIconsComponent,
     DecorativeLinesComponent,
-    MatTabsComponent
   ],
   imports: [
     BrowserModule,
