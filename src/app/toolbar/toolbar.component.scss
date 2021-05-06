@@ -12,13 +12,14 @@ mat-toolbar {
   justify-content: space-around;
   text-align: center;
   z-index: 1000;
+  height: 65px;
+
   font-family: 'Tenor Sans', sans-serif !important;
 }
 
 p {
   font-size: 30px;
   text-align: left;
-  font-family: 'Tenor Sans', sans-serif;
   margin: auto;
 }
 
@@ -77,6 +78,7 @@ a {
   color: white;
   font-size: 14px;
   line-height: 10px;
+  text-decoration: none;
 }
 
 .spacer {

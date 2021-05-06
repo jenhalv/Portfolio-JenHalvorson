@@ -24,7 +24,6 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
-import { DescriptionComponent } from './landing-page/description/description.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 
@@ -71,7 +70,6 @@ const ANGULAR_MATERIAL_MODULES = [
     ToolbarComponent,
     LandingPageComponent,
     ContactMeComponent,
-    DescriptionComponent,
     CarouselComponent,
     ImageSliderComponent,
     AboutComponent,
