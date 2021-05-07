@@ -17,7 +17,7 @@ export class ProjectCardComponent implements OnInit {
       subtitle: '<a href="https://portfolio-jenhalvorson.web.app/">Personal Portfolio</a>',
       image: 'assets/projects-photos/Project_JH.png',
       imageAlt: 'My Portfolio',
-      content: 'Building from the Hello World Angular app, I created this unique customized personal Portfolio using HTML & SCSS, as well as incorporating routing to showcase my education, employment, projects, and skills.  I house the site using Firebase and use their storage for images and code.  This project has given me a great deal of pride since it’s my first completely written app from scratch.  I added in my own images and created icons (like the resume, computer, and grad cap) using Adobe Photoshop & Illustrator.  The portfolio will always be a work in progress as I add more information.  My goal is to have some basic javascript functions to showcase a few small projects I have completed from different coursework.',
+      content: '<h4>Created September 2020</h4><ul><li>My unique customized personal portfolio was generated using Angular CLI.</li><li>A toolbar, multiple information sections, & a footer were generated.</li><li>A unique style & color scheme was implemented.</li><li>The source code/repo can be found on GitHub & the site is hosted on Firebase.</li></ul>',
       icons: [
         {
           iconUrl: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2FAngular_Icon.png?alt=media&token=3661bf7e-3163-4681-8c00-d81885a0c69c',
@@ -98,7 +98,7 @@ export class ProjectCardComponent implements OnInit {
       subtitle: '<a href="https://tour-of-backyard-birds.web.app/home">Tour of Backyard Birds</a>',
       image: 'assets/projects-photos/Project_Bird.png',
       imageAlt: 'Tour of Backyard Birds Website',
-      content: 'After cloning <a href="https://github.com/johnpapa/angular-tour-of-heroes/">John Papa’s Tour of Heroes app</a>, I added my own style and layout preferences to make my <a href="https://tour-of-backyard-birds.web.app/">Tour of Backyard Birds</a> app.  I designed a button & created a function that would reset the bird details page back to the initial value.  I plan to implement an image carousel.',
+      content: '<h4>Created April 2021</h4><ul><li>This app was initially cloned from <a href="https://github.com/johnpapa/angular-tour-of-heroes/">John Papa’s Tour of Heroes tutorial</a>.</li><li>Using Angular CLI, toolbar & footer components were generated.</li><li>An In-Memory-Data Service file saves and manages information.</li><li>An additional function was created to reset the bird details to the initial value (stored in the service).<li>My unique style & color scheme was implemented.</li><li>The source code/repo can be found on GitHub & the site is hosted on Firebase.</li></ul>    ',
       icons: [
         {
           iconUrl: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2FAngular_Icon.png?alt=media&token=3661bf7e-3163-4681-8c00-d81885a0c69c',
