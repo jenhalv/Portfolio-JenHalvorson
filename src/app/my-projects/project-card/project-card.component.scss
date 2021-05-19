@@ -55,11 +55,6 @@ h3 {
   font-size: 17px;
   padding: 10px;
   margin: 0px auto 0px 0px;
-  }
-
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
 }
 
 .logo-image {
@@ -157,6 +152,15 @@ mat-card-content {
   background-color: black  !important;
 }
 
+
+@media only screen and (max-width: 340px) {
+h3 {
+  font-size: 15px;
+  padding: 5px;
+  margin: auto;
+}
+}
+
 @media only screen and (max-width: 420px) {
   mat-card {
     margin: 25px 5px;
@@ -171,6 +175,12 @@ mat-card-content {
   }
   :host ::ng-deep ul {
   padding-inline-start: 20px;
+}
+.github-image {
+  width: 50px !important;
+  height: 50px !important;
+  padding: 5px;
+  margin: auto;
 }
 }
 
