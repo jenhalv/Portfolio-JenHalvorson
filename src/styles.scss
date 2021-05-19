@@ -89,6 +89,9 @@ h3 {
 p {
   margin-block-start: 0em;
   margin-block-end: 0em;
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 hr {
