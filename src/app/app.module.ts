@@ -27,7 +27,6 @@ import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 
-import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { ReadMoreComponent } from './read-more/read-more.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -37,6 +36,8 @@ import { SidenavComponent } from './toolbar/sidenav/sidenav.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { LayoutModule } from '@angular/cdk/layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -63,7 +64,8 @@ const ANGULAR_MATERIAL_MODULES = [
   MatDividerModule,
   MatExpansionModule,
   MatTabsModule,
-  MatTooltipModule
+  MatTooltipModule,
+  MatProgressBarModule
 ];
 
 @NgModule({

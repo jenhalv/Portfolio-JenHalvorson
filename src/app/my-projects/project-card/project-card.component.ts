@@ -19,7 +19,7 @@ export class ProjectCardComponent implements OnInit {
       image: 'assets/projects-photos/Project_JH.png',
       imageAlt: 'My Portfolio',
       created: 'July 2020',
-      content: '<ul><li>This SPA (Single Page Application) Portfolio was developed using Angular CLI in Visual Studio Code to display my knowledge of HTML, SASS/CSS, TypeScript, & Angular CLI commands.</li><li>Components were generated to display content, routing was added to navigate among different sections, data binding is used for read-only data, and methods were created for user events (for example clicking the “About” or “Tools” tabs in this Project’s description).</li><li>Git, GitHub & GitKraken were used to manage and keep track of my source code history & host my repository.  Images are stored & the app is hosted on Firebase.</li></ul>',
+      content: '<ul><li>This SPA (Single Page Application) Portfolio was developed using Angular CLI in Visual Studio Code to display my knowledge of HTML, SASS/CSS, TypeScript, & Angular CLI commands.</li><li>Components were generated to display content, routing was added to navigate among different sections, data binding was incorporated for read-only data, and methods were created for user events (for example clicking the “About” or “Tools” tabs in this Project’s description).</li><li>Git, GitHub & GitKraken were used to manage and keep track of my source code history & host my repository.  Images are stored & the app is hosted on Firebase.</li></ul>',
       icons: [
         {
           iconUrl: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jenhalvorson.appspot.com/o/Icons%2FVSC_Icon.png?alt=media&token=03301415-c81d-4cd0-b682-a525434d3c41',
@@ -71,7 +71,7 @@ export class ProjectCardComponent implements OnInit {
       image: 'assets/projects-photos/Project_PP.png',
       imageAlt: 'Paul\'s Pecans Website',
       created: 'December 2020',
-      content: '<ul><li>This SPA (Single Page Application) was developed for my family’s pecan farming business using Angular CLI in Visual Studio Code.</li><li>Components were generated to display content, routing was added to navigate among different pages, String Interpolation (one-way data binding) used to output the read-only data in the recipe section, and clickable methods were created for user events (for example the “Read More” buttons on the homepage mat-cards).</li><li>Git, GitHub & GitKraken were used to manage and keep track of my source code history & host my repository.  Images are stored & the app is hosted on Firebase.</li></ul>',
+      content: '<ul><li>This SPA (Single Page Application) was developed for my family’s pecan farming business using Angular CLI in Visual Studio Code.</li><li>Components were generated to display content, routing was added to navigate among different pages, String Interpolation (one-way data binding) was incorporated to output the read-only data in the recipe section, and clickable methods were created for user events (for example the “Read More” buttons on the homepage mat-cards).</li><li>Git, GitHub & GitKraken were used to manage and keep track of my source code history & host my repository.  Images are stored & the app is hosted on Firebase.</li></ul>',
       icons: [
         {
           iconUrl: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jenhalvorson.appspot.com/o/Icons%2FVSC_Icon.png?alt=media&token=03301415-c81d-4cd0-b682-a525434d3c41',
@@ -185,7 +185,7 @@ export class ProjectCardComponent implements OnInit {
       image: 'assets/projects-photos/Project_TD.png',
       imageAlt: 'To Do List App Website',
       created: 'April 2021',
-      content: '<ul><li>In April 2021, I was a mentor for <a target="_blank" href="https://twitter.com/AngularGirls">ngGirls conference</a> (<a target="_blank" href="https://workshops.ng-girls.org/ngconf-2021/">ngconf 2021</a>).</li><li>Prior to the conference, I followed the <a target="_blank" href="https://ng-girls.gitbook.io/todo-list-tutorial/">Angular To-Do List App tutorial</a> to gain a better understanding of the application that was going to be used during the conference.</li><li>Components were generated to represent individual variables & methods and a To-Do DataService was utilized for saving and managing the to-do list of items.</li><li>My spin of style was added with fun icons & images and social media clickable links.</li><li>My source code can be found on GitHub, & the site is hosted on Firebase.</li></ul>',
+      content: '<ul><li>In April 2021, I was a mentor for <a target="_blank" href="https://twitter.com/AngularGirls">ngGirls conference</a> (<a target="_blank" href="https://workshops.ng-girls.org/ngconf-2021/">ngconf 2021</a>).&nbsp;&nbsp;Prior to the conference, I followed the <a target="_blank" href="https://ng-girls.gitbook.io/todo-list-tutorial/">Angular To-Do List App tutorial</a> to gain a better understanding of the application that was going to be used during the conference.</li><li>Components were generated to represent individual variables & methods and a To-Do DataService was utilized for saving and managing the to-do list of items.</li><li>My spin of style was added with fun icons & images and social media clickable links.</li><li>My source code can be found on GitHub, & the site is hosted on Firebase.</li></ul>',
       icons: [
         {
           iconUrl: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jenhalvorson.appspot.com/o/Icons%2FVSC_Icon.png?alt=media&token=03301415-c81d-4cd0-b682-a525434d3c41',
@@ -236,7 +236,7 @@ export class ProjectCardComponent implements OnInit {
       image: 'assets/projects-photos/Project_Bird.png',
       imageAlt: 'Tour of Backyard Birds Website',
       created: 'April 2021',
-      content: '<ul><li>Following <a href="https://angular.io/tutorial">John Papa’s Tour of Heroes</a> tutorial, I created a SPA  (Single Page Application) using Angular CLI to generate components containing an array of birds & bird data/details and incorporated routing to navigate among the different components.</li><li>String Interpolation data binding is used for read-only data (unchangeable cards on the home page).</li><li>Two-way data binding is used to allow for editable fields (change the name of the bird).</li><li>Event data binding provides clickable methods (clear, save, reset, etc).</li</ul>',
+      content: '<ul><li>Following <a href="https://angular.io/tutorial">John Papa’s Tour of Heroes</a> tutorial, I created a SPA (Single Page Application) using Angular CLI to generate components containing an array of birds & bird data/details and incorporated routing to navigate among the different components.</li><li>String Interpolation data binding was incorporated for read-only data (unchangeable cards on the home page).&nbsp;&nbsp;Two-way data binding was incorporated to allow for editable fields (change the name of the bird).&nbsp;&nbsp;Event data binding provides clickable methods (clear, save, reset, etc).</li><li>Media queries were added to ensure responsive layouts.</li></ul>',
       icons: [
         {
           iconUrl: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jenhalvorson.appspot.com/o/Icons%2FVSC_Icon.png?alt=media&token=03301415-c81d-4cd0-b682-a525434d3c41',
@@ -284,7 +284,7 @@ export class ProjectCardComponent implements OnInit {
       image: 'assets/projects-photos/Project_HH1.png',
       imageAlt: 'Mrs. Halvorson\'s Classroom Website',
       created: 'August 2013',
-      content: 'Using a template from Weebly, I embellished <a href="https://halvorsonshome.weebly.com/">Mrs. Halvorson’s Home</a>, a Weebly website to use daily in my kindergarten classroom that had easy-to-use tabs with custom educational pictures for my students.&nbsp;&nbsp;Teachers across the district used it in their classrooms as a resourceful learning tool (and many still use the site today).&nbsp;&nbsp;HTML was implemented to image source the child-friendly pictures saved within my site and a link directed the user to other supplemental educational websites.&nbsp;&nbsp;CSS was used to make image borders and specific sizes were added to help the site look clean and user-friendly.  ',
+      content: 'Using a template from Weebly, I embellished <a href="https://halvorsonshome.weebly.com/">Mrs. Halvorson’s Home</a>, a website to use daily in my kindergarten classroom that had easy-to-use tabs with custom educational pictures for my students.&nbsp;&nbsp;HTML was implemented to image source the child-friendly pictures saved within my site and a link source directed the user to other supplemental educational websites.&nbsp;&nbsp;CSS was used to make image-specific borders and sizes to help the site look clean and user-friendly.',
       icons: [
         {
           iconUrl: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2FHTML_B.png?alt=media&token=cfb4bc18-f0cf-4651-b010-43cf2deea19a',
@@ -314,7 +314,7 @@ export class ProjectCardComponent implements OnInit {
       image: 'assets/projects-photos/Project_PIF1.png',
       imageAlt: 'Pictures in Focus Website',
       created: 'September 2004',
-      content: 'From 2004-2011, I built my own photography business and personalized a weebly template to showcase a few of my favorite wedding & engagement pictures.  The site is straightforward and basic (I do not take pictures anymore professionally - just fun candid photos of kids, cats, and birds!).',
+      content: 'In 2004, I built my own photography business and personalized a small Weebly template to showcase a few of my favorite wedding & engagement pictures.  The site is straightforward and basic (I do not take pictures anymore professionally - just fun candid photos of kids, cats, and birds!).',
       icons: [
         {
           iconUrl: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2FHTML_B.png?alt=media&token=cfb4bc18-f0cf-4651-b010-43cf2deea19a',
@@ -348,7 +348,7 @@ export class ProjectCardComponent implements OnInit {
       image: 'assets/projects-photos/Project_RPS1.png',
       imageAlt: 'Roof Power Solar Website',
       created: 'November 2015',
-      content: 'A local company, Roof Power Solar, hired me to create a basic customized weebly-hosted site that the owner would be able to edit on his own as needed.  Using some custom HTML and style, the company color scheme, and images & text supplied by the owner, I made the site eye-appealing as well as functional.',
+      content: 'A local company, Roof Power Solar, hired me to create a customized Weebly-hosted site that the owner would be able to easily edit on his own as needed.  Using some custom HTML and style, the company color scheme, and images & text supplied by the owner, I made the site eye-appealing as well as functional.',
       icons: [
         {
           iconUrl: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2FHTML_B.png?alt=media&token=cfb4bc18-f0cf-4651-b010-43cf2deea19a',
@@ -378,7 +378,7 @@ export class ProjectCardComponent implements OnInit {
       image: 'assets/projects-photos/Project_HG1.png',
       imageAlt: 'Home Gardening Website',
       created: 'March 2020',
-      content: 'Home Gardening, a local seed-selling business, hired me to create a basic customized weebly-hosted site that the owner could connect to his Etsy selling site.  Using a basic weebly template, and images & text supplied by the owner, the site is clean and simple.',
+      content: 'Home Gardening, a local seed-selling business, hired me to create a simple one-page webpage that the owner could use to connect to his Etsy site.  Using a basic Weebly template, I added in a few images & text to have a clean & easy-to-update site.',
       icons: [
         {
           iconUrl: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2FHTML_B.png?alt=media&token=cfb4bc18-f0cf-4651-b010-43cf2deea19a',

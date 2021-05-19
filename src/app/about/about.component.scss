@@ -1,35 +1,44 @@
 div {
-  justify-content: center;
+  margin: auto;
   display: flex;
-  font-family: 'Tenor Sans', sans-serif;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
 }
 
 mat-card {
-  max-width: 800px;
-  color: black;
-  background-color:  #efefef;
+  background-color: #efefef;
   transition: 2s ease;
-  font-size: 17px;
-  line-height: 24px;
+  line-height: 22px;
   margin: 45px 10px 100px 10px;
+  border-radius: 0% !important;
+  box-shadow: 0px 0px 5px 3px rgb(0 0 0 / 20%) !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  display: flex !important;
+  justify-content: center !important;
+  max-width: 1500px;
 }
 
 mat-card:hover {
-  background-color: #d0d0d0;
-  transition: background-color 2s, color 500ms, font-size 500ms linear;
+  background-color: #e0dede;
+  transition: background-color 2s, color 500ms;
 }
 
 mat-card-title {
-  font-size: 35px;
-  margin: 20px auto;
-  text-align: left;
+  font-size: 32px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  margin: 15px auto;
 }
 
 .mat-card>:first-child, .mat-card-content>:first-child {
-  margin-top: 10px;
+  margin: auto;
+  text-align: justify;
+  max-width: 650px;
+  padding-right: 30px;
 }
 
 a {
@@ -40,3 +49,33 @@ a:hover {
     opacity: 0.7;
     cursor: pointer;
 }
+
+p {
+  display: block;
+}
+
+section {
+  max-width: 500px;
+}
+
+
+@media only screen and (max-width: 1250px) {
+  .mat-card>:first-child, .mat-card-content>:first-child {
+    max-width: 550px;
+    padding: 3px;
+}
+}
+
+@media only screen and (max-width: 550px) {
+  div {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  mat-card {
+    padding: 15px;
+}
+}
+
+

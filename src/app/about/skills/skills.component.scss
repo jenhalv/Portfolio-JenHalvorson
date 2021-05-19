@@ -1,34 +1,80 @@
-h2{
-  margin: 8px 0;
+mat-card {
+  box-shadow: 0px 0px 5px 3px rgb(0 0 0 / 20%);
+  background: white;
+  letter-spacing: 1px;
+  border-radius: 0%;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  min-width: 500px;
+}
+
+h3 {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 29px;
+  height: 29px;
+  margin: 5px 5px 5px 0px;
 }
 
 p {
-  margin: 0;
+  margin: 0px;
 }
 
-.card svg.material-icons path {
-  fill: #888;
-}
-
-.card-container {
+mat-card-title {
+  font-size: 32px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 16px;
-}
-
-.card {
-  border-radius: 4px;
-  border: 1px solid #eee;
-  background-color: #fafafa;
-  height: 40px;
-  width: 200px;
-  margin: 0 8px 16px;
-  padding: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  transition: all 0.2s ease-in-out;
-  line-height: 24px;
+  margin: 15px auto;
+}
+
+
+section {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+:host ::ng-deep mat-progress-bar {
+  height: 25px;
+  background-color: #1a2d42 !important;
+}
+
+:host ::ng-deep .mat-progress-bar-fill {
+  background-color: #1a2d42 !important;
+}
+
+:host ::ng-deep .mat-progress-bar-fill::after {
+  background-color: #1a2d42 !important;
+}
+
+:host ::ng-deep .mat-progress-bar-buffer {
+  background-color: #ececec !important;
+}
+
+div {
+  position: absolute;
+  padding-left: 10px;
+  color: white;
+}
+
+.mat-card>:last-child:not(.mat-card-footer), .mat-card-content>:last-child:not(.mat-card-footer) {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 560px) {
+    .mat-card:not([class*=mat-elevation-z]) {
+      min-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+  .mat-card:not([class*=mat-elevation-z]) {
+    min-width: 200px;
+  }
 }

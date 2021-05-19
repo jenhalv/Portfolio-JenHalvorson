@@ -1,3 +1,35 @@
+<mat-card>
+<!--
+  <mat-card-title>Skills
+    <app-decorative-lines></app-decorative-lines>
+  </mat-card-title> -->
+
+  <mat-card-content *ngFor="let skill of SKILLS">
+
+    <h3>
+      <img [src]="skill.iconUrl" [alt]="skill.iconAlt"/>
+        {{skill.title}}
+      </h3>
+
+    <section>
+
+      <mat-progress-bar
+        mode="determinate"
+        [value]="skill.value"
+        [bufferValue]="bufferValue">
+      </mat-progress-bar>
+
+      <div>
+        <ng-template [ngIf]="skill.value == 33">Beginner</ng-template>
+        <ng-template [ngIf]="skill.value == 66">Intermediate</ng-template>
+        <ng-template [ngIf]="skill.value == 100">Proficient</ng-template>
+      </div>
+
+    </section>
+
+  </mat-card-content>
+</mat-card>
+
 <!-- THINGS TO ADD LATER:
 
 personable collaborative, motivated,
@@ -9,16 +41,6 @@ You have an online portfolio/website that proves the above.
 You have dreamed of joining a solid, growing, no nonsense early stage company working directly with founders and A-level experienced players. -->
 
 <!--
-<div>
-<a class="card" target="_blank" rel="noopener" href="https://github.com/jenhalv">
-  <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
-
-  <span>My GitHub</span>
-
-  <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-</a>
-
-</div>
 
 
 <h2>Possible Interactive javascript activities</h2>
