@@ -22,21 +22,21 @@ export class EducationComponent implements OnInit {
         imageAlt: 'Codecademy',
         website: 'https://www.codecademy.com/',
         },
-      {
-        image: 'assets/education-icons/FCC.png',
-        imageAlt: 'Free Code Camp',
-        website: 'https://www.freecodecamp.org/',
-        },
+      // {
+      //   image: 'assets/education-icons/FCC.png',
+      //   imageAlt: 'Free Code Camp',
+      //   website: 'https://www.freecodecamp.org/',
+      //   },
       {
         image: 'assets/education-icons/PS.png',
         imageAlt: 'PluralSight',
         website: 'https://www.pluralsight.com/'
         },
-      {
-        image: 'assets/education-icons/UD.png',
-        imageAlt: 'Udemy',
-        website: 'https://www.udemy.com/'
-        },
+      // {
+      //   image: 'assets/education-icons/UD.png',
+      //   imageAlt: 'Udemy',
+      //   website: 'https://www.udemy.com/'
+      //   },
       {
         image: 'assets/education-icons/KCDC.png',
         imageAlt: 'Kansas City Developers Conference 2019',

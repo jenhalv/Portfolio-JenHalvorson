@@ -6,14 +6,11 @@
 .intro {
   margin: 10px;
   padding: 10px;
-  transition: 2s ease;
   animation-name: backgroundColorPalette;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   justify-content: center;
-  display: flex;
-  font-family: 'Tenor Sans', sans-serif;
 }
 
 .icons {
@@ -33,6 +30,14 @@ mat-card {
   font-family: 'Tenor Sans', sans-serif;
 }
 
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .mat-card>:last-child:not(.mat-card-footer), .mat-card-content>:last-child:not(.mat-card-footer) {
   margin: 10px auto;
 }
@@ -41,10 +46,29 @@ mat-card {
   margin: 10px auto;
 }
 
-section {
+.mat-icon {
+  font-size: 30px;
+  color: black;
+  vertical-align: text-bottom;
+}
+
+.mat-icon:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+
+h1 {
   margin: auto;
-  padding: 10px;
-  text-align: center;
+}
+
+hr {
+  margin: 10px;
 }
 
 .icon {
@@ -69,7 +93,7 @@ section {
   h1, h3 {
   text-align: center;
 }
-h3 {
+  h3 {
   margin: 25px auto 5px auto;
 }
 }

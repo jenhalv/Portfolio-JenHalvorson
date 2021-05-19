@@ -1,9 +1,7 @@
 div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  margin: auto;
 }
 
 .mat-card-content {
@@ -12,6 +10,6 @@ div {
 }
 
 .icon {
-  width: 44px;
+  width: 60px;
   padding: 5px;
 }

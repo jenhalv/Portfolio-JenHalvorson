@@ -27,6 +27,8 @@ import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 import { ReadMoreComponent } from './read-more/read-more.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -60,7 +62,8 @@ const ANGULAR_MATERIAL_MODULES = [
   MatGridListModule,
   MatDividerModule,
   MatExpansionModule,
-  MatTabsModule
+  MatTabsModule,
+  MatTooltipModule
 ];
 
 @NgModule({

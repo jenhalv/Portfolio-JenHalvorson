@@ -9,7 +9,7 @@ mat-card {
   color: black;
   background-color:  #efefef;
   transition: 2s ease;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 24px;
   margin: 45px 10px 100px 10px;
 }
@@ -22,6 +22,10 @@ mat-card:hover {
 mat-card-title {
   font-size: 35px;
   margin: 20px auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .mat-card>:first-child, .mat-card-content>:first-child {
@@ -33,9 +37,6 @@ a {
 }
 
 a:hover {
-  cursor: pointer;
-  background-color: red;
-  padding: 1px;
-  transition: background-color 2s, color 500ms, font-size 500ms linear;
-  color: black;
+    opacity: 0.7;
+    cursor: pointer;
 }
