@@ -5,6 +5,20 @@
   margin: auto;
 }
 
+.image-container {
+  padding: 0px;
+  max-height: 250px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  }
+
+.contact{
+  position: absolute;
+  margin: auto;
+  top: 55px;
+}
+
 mat-card {
   box-shadow: none;
   background-color: transparent;
