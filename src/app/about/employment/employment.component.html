@@ -1,9 +1,23 @@
 <hr>
 
-<div class="jump" id="employment"><h1>Employment</h1></div>
-
-<h1 class="coming-soon">COMING SOON!</h1>
-
-<div class="classroom-container">
-  <img class="classroom-pic" src="assets/experience-icons/Education.png" alt="Jennifer in her classroom">
+<div class="jump" id="employment">
+  <h1>Employment</h1>
+  <app-decorative-lines></app-decorative-lines>
 </div>
+
+  <mat-card *ngFor="let job of JOBS">
+
+    <mat-card-title [innerHTML]="job.title"></mat-card-title>
+
+    <mat-card-content [innerHTML]="job.description"></mat-card-content>
+
+    <mat-card-content style="padding-bottom: 0px" [innerHTML]="job.company"></mat-card-content>
+
+    <mat-card-content style="padding-top: 0px">{{job.dates}}</mat-card-content>
+
+    <hr style="margin: 0px">
+
+  </mat-card>
+
+
+<div style="margin-bottom: 145px;"></div>

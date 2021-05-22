@@ -5,27 +5,42 @@
   margin: auto;
 }
 
+.jump {
+  margin-top: -130px;
+  padding-top: 130px;
+}
+
 .image-container {
-  padding: 0px;
-  max-height: 250px;
   overflow: hidden;
   width: 100%;
   height: auto;
+  max-width: 900px;
+  margin: auto;
+  position: relative;
   }
 
 .contact{
-  position: absolute;
+  position: relative;
   margin: auto;
-  top: 55px;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 mat-card {
   box-shadow: none;
   background-color: transparent;
-  padding: 15px;
+  padding: 0px 15px;
   display: flex;
   justify-content: center;
   font-family: 'Tenor Sans', sans-serif !important;
+}
+
+:host ::ng-deep .mat-card-image {
+  mask-image: linear-gradient(to bottom, transparent 15%, black 55%) !important;
+  margin: -100px auto 0px !important;
+  max-width: 900px;
+  display: flex;
 }
 
 mat-card-title {
@@ -35,6 +50,7 @@ mat-card-title {
 
 mat-card-subtitle {
   font-weight: 100;
+  color: black !important;
   text-underline-position: under;
 }
 
@@ -51,9 +67,10 @@ a {
 p {
   max-width: 750px;
   display: block;
-  margin: 15px auto;
+  margin: 15px auto 0px;
   text-align: justify;
   padding: 15px;
+  font-size: 18px;
 }
 
 .fa {
@@ -68,9 +85,23 @@ a:hover {
   opacity: 0.7;
 }
 
+@media only screen and (max-width: 675px) {
+  .mat-card-image:first-child {
+    margin-top: -50px;
+    margin-bottom: -35px;
+  }
+}
 @media only screen and (max-width: 475px) {
   .card-container {
     justify-content: center;
     display: block;
+}
+
+:host ::ng-deep .mat-card-image {
+  margin-top: -60px !important;
+}
+
+.fa {
+  padding: 10px;
 }
 }

@@ -49,6 +49,8 @@ import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { LogoIconsComponent } from './my-projects/project-card/logo-icons/logo-icons.component';
 import { ProjectCardComponent } from './my-projects/project-card/project-card.component';
 import { DecorativeLinesComponent } from './decorative-lines/decorative-lines.component';
+import { EducationCardComponent } from './about/education/education-card/education-card.component';
+import { EmploymentCardComponent } from './about/employment/employment-card/employment-card.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -89,6 +91,8 @@ const ANGULAR_MATERIAL_MODULES = [
     MyProjectsComponent,
     LogoIconsComponent,
     DecorativeLinesComponent,
+    EducationCardComponent,
+    EmploymentCardComponent,
   ],
   imports: [
     BrowserModule,

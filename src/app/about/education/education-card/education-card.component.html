@@ -1,0 +1,40 @@
+<div class="education">
+
+  <div class="card-container">
+
+    <img class="jen-image" src="assets/education-icons/MSSU_2012.png" alt="MSSU family photo">
+
+    <div class="education1">
+      <a href="https://www.mssu.edu/">
+      <img class="education-image" src="assets/education-icons/MSSU.png"/></a>
+      <p>
+        <b>MSSU Bachelor’s Degree</b>
+        <br>
+        Elementary Education -- 2000
+
+        <hr style="margin: 30px 10px;">
+
+      <a href="https://www.bakeru.edu/">
+      <img class="education-image" src="assets/education-icons/baker.png"/></a>
+      <p>
+        <b>BU Master's Degree</b>
+        <br>
+        Liberal Arts -- 2005</p>
+    </div>
+
+  </div>
+
+  <div class="color-container">
+
+    <h2>Conferences, Courses, & Coding!</h2>
+
+    <div class="education-container">
+      <mat-card *ngFor="let card of CARDS">
+        <a [attr.href]="card.website">
+        <img mat-card-image class="courses-image"[src]="card.image" [alt]="card.imageAlt"/></a>
+      </mat-card>
+    </div>
+
+  </div>
+
+</div>

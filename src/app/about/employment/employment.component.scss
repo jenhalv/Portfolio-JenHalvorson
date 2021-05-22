@@ -1,12 +1,50 @@
-.classroom-pic {
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
-  width: 245px;
-  height: 100%;
-  margin: 15px auto 135px auto;
+.jump {
+  margin-top: -90px;
+  padding-top: 90px;
 }
 
-.classroom-container {
-  max-width: 875px;
-  display: flex;
+a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:-webkit-any-link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+:host ::ng-deep a:visited {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+:host ::ng-deep mat-card {
+  margin: 25px auto;
+  background-color: white;
+  font-family: 'Tenor Sans', sans-serif;
+  max-width: 1000px;
+}
+
+mat-card-title {
+  font-size: 23px !important;
+}
+
+mat-card-content {
   margin: auto;
+  font-size: 17px;
+  line-height: 21px;
+  padding: 20px 0px 10px;
+}
+
+@media only screen and (max-width: 420px) {
+  :host ::ng-deep ul {
+  padding-inline-start: 20px;
+}
 }

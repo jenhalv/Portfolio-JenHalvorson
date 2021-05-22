@@ -24,6 +24,7 @@ export class SkillsComponent implements OnInit {
     // {
     //   title: 'SASS',
     //   value: 100,
+    // tslint:disable-next-line: max-line-length
     //   iconUrl: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2FSASS_Icon.png?alt=media&token=c2a1a0bb-6c6a-4bb7-87cf-64be55502496',
     //   iconAlt: 'SASS Icon'
     // },
@@ -47,6 +48,7 @@ export class SkillsComponent implements OnInit {
     // {
     //   title: 'Stackblitz',
     //   value: 66,
+    // tslint:disable-next-line: max-line-length
     //   iconUrl: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jenhalvorson.appspot.com/o/Icons%2Fstackblitz.png?alt=media&token=42e19877-20cf-4a76-9fa9-b74923bc72a7',
     //   iconAlt: 'Stackblitz Icon'
     // },
@@ -65,12 +67,14 @@ export class SkillsComponent implements OnInit {
     // {
     //   title: 'Weebly',
     //   value: 100,
+    // tslint:disable-next-line: max-line-length
     //   iconUrl: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jenhalvorson.appspot.com/o/Icons%2FweeblyW.png?alt=media&token=42ce457e-1afb-4ff7-8860-2f5181e2c95d',
     //   iconAlt: 'Weebly Icon'
     // },
     // {
     //   title: 'Adobe Photoshop',
     //   value: 100,
+    // tslint:disable-next-line: max-line-length
     //   iconUrl: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jenhalvorson.appspot.com/o/Icons%2Fphotoshop_icon.png?alt=media&token=29486841-07eb-44da-a295-7d7e23a10c21',
     //   iconAlt: 'Adobe Photoshop Icon'
     // },

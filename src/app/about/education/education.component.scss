@@ -1,95 +1,11 @@
 div {
   display: flex;
   justify-content: center;
+  font-family: 'Tenor Sans', sans-serif !important;
   flex-wrap: wrap;
-  font-family: 'Tenor Sans', sans-serif;
 }
 
-.education {
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  transition: 4s ease;
-  animation-name: backgroundColorPalette;
-  animation-duration: 10s;
-  max-width: 1300px;
-  margin: auto;
-  padding: 15px 5px;
-  align-items: center;
-}
-
-.education1 {
-  display: block;
-  padding: 0px 0px 0px 20px;
-}
-
-.card-container {
-  border: 5px black solid;
-  margin: 20px auto;
-  padding: 20px;
-  text-align: center;
-  align-items: center;
-}
-
-img {
-  margin: auto;
-}
-
-.jen-image {
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
-  width: 245px;
-  padding: 10px;
-}
-
-p {
-  font-size: 20px;
-  display: block;
-}
-
-.color-container {
-  display: block;
-}
-
-.education-container {
-  max-width: 600px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 25px auto;
-  padding: 10px;
-  }
-
-.education-image {
-  width: 200px;
-}
-
-mat-card {
-  padding: 0px;
-  align-self: center;
-}
-.courses-image {
-  width: 150px;
-  padding: 10px;
-}
-
-
-@media only screen and (max-width: 627px) {
-.education1  {
-  padding: 10px 0px;
-}
-.card-container {
-  display: block;
-}
-}
-
-@media only screen and (max-width: 325px) {
-  .jen-image {
-    width: 225px;
-  }
-}
-
-@media only screen and (max-width: 290px) {
-  .jen-image {
-    width: 165px;
-  }
+.jump {
+  margin-top: -140px;
+  padding-top: 140px;
 }
