@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CARDS } from '../../cards';
+import { PROJECTS } from '../../projects';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-project-card',
@@ -7,12 +8,13 @@ import { CARDS } from '../../cards';
   styleUrls: ['./project-card.component.scss']
 })
 export class ProjectCardComponent implements OnInit {
-  @Input() card: CARDS;
+  @Input() card: PROJECTS;
 
-  CARDS = [
+  PROJECTS = [
     {
       logo: 'assets/projects-photos/favicon_JH.png',
       logoAlt: 'My Portfolio favicon',
+      projectId: 'jen',
       title: 'Front End Developer',
       subtitle: 'Personal Portfolio',
       subtitleLink: 'https://portfolio-jenhalvorson.web.app/',
@@ -65,6 +67,7 @@ export class ProjectCardComponent implements OnInit {
     {
       logo: 'assets/projects-photos/favicon_PP.png',
       logoAlt: 'Paul\'s Pecans Logo',
+      projectId: 'paul',
       title: 'Front End Developer',
       subtitle: 'Paul\'s Pecans',
       subtitleLink: 'https://paulspecans.com/',
@@ -125,6 +128,7 @@ export class ProjectCardComponent implements OnInit {
     {
       logo: 'assets/projects-photos/favicon_AO.png',
       logoAlt: 'Arvid Outdoors Logo',
+      projectId: 'arvid',
       title: 'Front End Developer',
       subtitle: 'Arvid Outdoors',
       subtitleLink: 'https://www.arvidoutdoors.com',
@@ -308,6 +312,7 @@ export class ProjectCardComponent implements OnInit {
     {
       logo: 'assets/projects-photos/favicon_PIF.png',
       logoAlt: 'Pictures in Focus favicon',
+      projectId: 'pictures',
       title: 'Website Designer',
       subtitle: 'Pictures in Focus',
       subtitleLink: 'http://picturesinfocus.weebly.com/',
@@ -342,6 +347,7 @@ export class ProjectCardComponent implements OnInit {
     {
       logo: 'assets/projects-photos/favicon_RPS.png',
       logoAlt: 'Roof Power Solar favicon',
+      projectId: 'roof',
       title: 'Website Designer',
       subtitle: 'Roof Power Solar',
       subtitleLink: 'http://www.roofpowersolar.com/',
@@ -372,6 +378,7 @@ export class ProjectCardComponent implements OnInit {
     {
       logo: 'assets/projects-photos/favicon_HG.png',
       logoAlt: 'Home Gardening favicon',
+      projectId: 'gardening',
       title: 'Website Designer',
       subtitle: 'Home Gardening Seeds',
       subtitleLink: 'http://moseeds.weebly.com/',
@@ -401,7 +408,9 @@ export class ProjectCardComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor( router: Router,
+               private route: ActivatedRoute, ) {
+   }
 
   ngOnInit(): void {
   }

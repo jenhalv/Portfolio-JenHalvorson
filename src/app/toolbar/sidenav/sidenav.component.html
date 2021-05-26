@@ -10,6 +10,11 @@
       <span class="material-icons-outlined" alt="projects">home</span>
   </button>
 
+  <button mat-menu-item (click)="onClickScroll('employment')" alt="employment page" aria-label="employment page" routerLinkActive="active">
+    <span class="material-icons-outlined" alt="employment">article</span>
+    <span class="menu-links">Employment</span>
+  </button>
+
   <button mat-menu-item (click)="onClickScroll('projects')" alt="projects page" aria-label="projects page" routerLinkActive="active">
     <span class="material-icons-outlined" alt="projects">devices</span>
     <span class="menu-links">Projects</span>
@@ -19,12 +24,6 @@
     <span class="material-icons-outlined" alt="education">school</span>
     <span class="menu-links">Education</span>
   </button>
-
-  <button mat-menu-item (click)="onClickScroll('employment')" alt="employment page" aria-label="employment page" routerLinkActive="active">
-    <span class="material-icons-outlined" alt="employment">article</span>
-    <span class="menu-links">Employment</span>
-  </button>
-
   <!-- <button mat-menu-item routerLink="/articles" alt="articles page" aria-label="articles page" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
     <span class="material-icons-outlined" alt="articles">rss_feed</span>
     <span class="menu-links">Articles</span>

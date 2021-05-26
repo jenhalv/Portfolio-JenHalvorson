@@ -1,34 +1,37 @@
 <div>
 
-  <mat-card *ngFor="let card of CARDS">
-
+  <mat-card *ngFor="let project of PROJECTS" [id]="project.projectId">
+      <div class="anchor">
+          <a name="product-one"></a>
+          <h2 >Product One</h2><br>
+        </div>
     <mat-card-header>
-      <img mat-card-avatar class="logo-image" [src]="card.logo" [alt]="card.logoAlt"/>
-      <mat-card-title>{{card.title}}</mat-card-title>
-      <mat-card-subtitle><a target="_blank" [attr.href]="card.subtitleLink">{{card.subtitle}}</a></mat-card-subtitle>
+      <img mat-card-avatar class="logo-image" [src]="project.logo" [alt]="project.logoAlt"/>
+      <mat-card-title>{{project.title}}</mat-card-title>
+      <mat-card-subtitle><a target="_blank" [attr.href]="project.subtitleLink">{{project.subtitle}}</a></mat-card-subtitle>
     </mat-card-header>
 
-    <img mat-card-image class="computer-image" [src]="card.image" [alt]="card.imageAlt"/>
+    <img mat-card-image class="computer-image" [src]="project.image" [alt]="project.imageAlt"/>
 
     <mat-tab-group mat-align-tabs="start">
 
         <mat-tab label="About">
-          <h4>Created {{card.created}}</h4>
-              <mat-card-content [innerHTML]="card.content"></mat-card-content>
+          <h4>Created {{project.created}}</h4>
+              <mat-card-content [innerHTML]="project.content"></mat-card-content>
         </mat-tab>
 
         <mat-tab label="Tools">
-          <app-logo-icons [ICONS]="card.icons"></app-logo-icons>
-          <mat-card-footer *ngIf="card.code" class="header-less-tabs">
+          <app-logo-icons [ICONS]="project.icons"></app-logo-icons>
+          <mat-card-footer *ngIf="project.code" class="header-less-tabs">
             <img class="github-image" alt="GitHub icon" src="https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2Fgit.png?alt=media&token=1991638f-3019-44fd-988e-72760a454844"/>
             <h3>Repo/Source Code:<br>
-            <a target="_blank" [attr.href]="card.code">{{card.codeName}}</a></h3>
+            <a target="_blank" [attr.href]="project.code">{{project.codeName}}</a></h3>
           </mat-card-footer>
         </mat-tab>
 
-        <mat-tab *ngIf="card.add" class="header-less-tabs" label="Extra">
-          <mat-card-content [innerHTML]="card.add"></mat-card-content>
-          <img *ngIf="card.addImage" mat-card-image class="addImage" [src]="card.addImage" [alt]="card.addImageAlt"/>
+        <mat-tab *ngIf="project.add" class="header-less-tabs" label="Extra">
+          <mat-card-content [innerHTML]="project.add"></mat-card-content>
+          <img *ngIf="project.addImage" mat-card-image class="addImage" [src]="project.addImage" [alt]="project.addImageAlt"/>
         </mat-tab>
 
     </mat-tab-group>

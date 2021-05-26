@@ -16,10 +16,10 @@ const routes: Routes = [
   //   path: 'employment',
   //   component: EmploymentComponent
   // },
-  // {
-  //   path: 'projects',
-  //   component: MyProjectsComponent
-  // },
+  {
+    path: 'projects',
+    component: MyProjectsComponent
+  },
   // {
   //   path: 'skills',
   //   component: SkillsComponent
