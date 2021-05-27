@@ -1,28 +1,25 @@
 <mat-card>
-<!--
-  <mat-card-title>Skills
-    <app-decorative-lines></app-decorative-lines>
-  </mat-card-title> -->
 
   <mat-card-content *ngFor="let skill of SKILLS">
 
-    <h3>
+    <mat-card-title>
       <img [src]="skill.iconUrl" [alt]="skill.iconAlt"/>
         {{skill.title}}
-      </h3>
+    </mat-card-title>
 
     <section>
 
       <mat-progress-bar
+      aria-label="Progress bar indicates Jennifer's web development skills as beginner, intermediate, or proficient."
         mode="determinate"
         [value]="skill.value"
-        [bufferValue]="bufferValue">
+        bufferValue="100">
       </mat-progress-bar>
 
       <div>
-        <ng-template [ngIf]="skill.value == 33">Beginner</ng-template>
-        <ng-template [ngIf]="skill.value == 66">Intermediate</ng-template>
-        <ng-template [ngIf]="skill.value == 100">Proficient</ng-template>
+        <ng-template [ngIf]="skill.value == 33" aria-label="beginner">Beginner</ng-template>
+        <ng-template [ngIf]="skill.value == 66" aria-label="intermediate">Intermediate</ng-template>
+        <ng-template [ngIf]="skill.value == 100" aria-label="proficient">Proficient</ng-template>
       </div>
 
     </section>

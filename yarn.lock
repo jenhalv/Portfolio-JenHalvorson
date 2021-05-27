@@ -6446,7 +6446,7 @@
     "npm-package-arg" "^6.0.0"
     "semver" "^5.4.1"
 
-"npm-pick-manifest@6.1.0":
+"npm-pick-manifest@^6.1.0", "npm-pick-manifest@6.1.0":
   "integrity" "sha512-ygs4k6f54ZxJXrzT0x34NybRlLeZ4+6nECAIbr2i0foTnijtS1TJiyzpqtuUAJOps/hO0tNDr8fRV5g+BtRlTw=="
   "resolved" "https://registry.npmjs.org/npm-pick-manifest/-/npm-pick-manifest-6.1.0.tgz"
   "version" "6.1.0"

@@ -5,7 +5,7 @@
     <mat-card-header>
       <img mat-card-avatar class="logo-image" [src]="project.logo" [alt]="project.logoAlt"/>
       <mat-card-title>{{project.title}}</mat-card-title>
-      <mat-card-subtitle><a target="_blank" [attr.href]="project.subtitleLink">{{project.subtitle}}</a></mat-card-subtitle>
+      <mat-card-subtitle><a target="_blank" rel="noopener" [attr.href]="project.subtitleLink">{{project.subtitle}}</a></mat-card-subtitle>
     </mat-card-header>
 
     <img mat-card-image class="computer-image" [src]="project.image" [alt]="project.imageAlt"/>
@@ -13,7 +13,7 @@
     <mat-tab-group mat-align-tabs="start">
 
         <mat-tab label="About">
-          <h4>Created {{project.created}}</h4>
+          <mat-card-content>Created {{project.created}}</mat-card-content>
               <mat-card-content [innerHTML]="project.content"></mat-card-content>
         </mat-tab>
 
@@ -21,8 +21,8 @@
           <app-logo-icons [ICONS]="project.icons"></app-logo-icons>
           <mat-card-footer *ngIf="project.code" class="header-less-tabs">
             <img class="github-image" alt="GitHub icon" src="https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2Fgit.png?alt=media&token=1991638f-3019-44fd-988e-72760a454844"/>
-            <h3>Repo/Source Code:<br>
-            <a target="_blank" [attr.href]="project.code">{{project.codeName}}</a></h3>
+            <mat-card-title>Repo/Source Code:<br>
+            <a target="_blank" rel="noopener" [attr.href]="project.code">{{project.codeName}}</a></mat-card-title>
           </mat-card-footer>
         </mat-tab>
 

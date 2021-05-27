@@ -46,20 +46,12 @@ a:hover {
 .github-image {
   width: 60px !important;
   height: 60px !important;
-  margin: 0px 0px 0px auto;
-  padding: 10px;
-}
-
-
-h3 {
-  font-size: 17px;
-  padding: 10px;
-  margin: 0px auto 0px 0px;
+  margin: 0px;
+  padding: 5px 10px 5px 5px;
 }
 
 .logo-image {
-  width: 40px !important;
-  height: 40px !important;
+  object-fit: inherit;
   margin: 5px;
   border-radius: 0% !important;
 }
@@ -98,6 +90,7 @@ mat-card:hover {
 :host ::ng-deep .mat-card-subtitle:not(:first-child):visited {
   color: black;
 }
+
 mat-card-subtitle {
   font-size: 20px !important;
   margin: auto;
@@ -106,6 +99,8 @@ mat-card-subtitle {
 
 mat-card-title {
   font-size: 23px !important;
+  margin: 0;
+  padding-left: 10px;
 }
 
 :host ::ng-deep .custom-dialog-container .mat-dialog-container {
@@ -128,15 +123,6 @@ mat-card-content {
   margin: 0px;
 }
 
-// .mat-card>:first-child {
-//   margin-top: -100px;
-// }
-
-// .jump {
-//   margin-top: -100px;
-//   padding-top: 100px;
-// }
-
 :host ::ng-deep .mat-tab-label {
   font-size: 20px !important;
   font-family: 'Tenor Sans', sans-serif !important;
@@ -158,16 +144,12 @@ mat-card-content {
 }
 
 ::ng-deep .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-  background-color: black  !important;
+  background-color: black !important;
 }
 
-
-@media only screen and (max-width: 340px) {
-h3 {
-  font-size: 15px;
-  padding: 5px;
-  margin: auto;
-}
+::ng-deep .mat-tab-label .mat-tab-label-content {
+  color: black !important;
+  font-weight: bold !important;
 }
 
 @media only screen and (max-width: 420px) {
@@ -183,14 +165,14 @@ h3 {
     max-width: 250px;
   }
   :host ::ng-deep ul {
-  padding-inline-start: 20px;
+    padding-inline-start: 20px;
 }
-.github-image {
-  width: 50px !important;
-  height: 50px !important;
-  padding: 5px;
-  margin: auto;
-}
+  .github-image {
+    width: 50px !important;
+    height: 50px !important;
+    padding: 5px;
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 1068px) {

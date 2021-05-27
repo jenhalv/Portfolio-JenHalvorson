@@ -9,12 +9,6 @@ mat-card {
   min-width: 500px;
 }
 
-h3 {
-  margin: 0px;
-  display: flex;
-  align-items: center;
-}
-
 img {
   width: 29px;
   height: 29px;
@@ -26,12 +20,11 @@ p {
 }
 
 mat-card-title {
-  font-size: 32px;
+  font-size: 18px;
   display: flex;
-  flex-direction: column;
+  margin: 0px;
   align-items: center;
-  margin: 15px auto;
-}
+  }
 
 
 section {

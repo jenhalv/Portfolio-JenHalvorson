@@ -37,6 +37,7 @@
     "include-media": "^1.4.9",
     "ng-image-slider": "^2.6.1",
     "ngx-hide-on-scroll": "^0.1.0",
+    "npm-pick-manifest": "^6.1.0",
     "rxjs": "~6.6.0",
     "safe-pipe": "^1.0.3",
     "tslib": "^2.0.0",
