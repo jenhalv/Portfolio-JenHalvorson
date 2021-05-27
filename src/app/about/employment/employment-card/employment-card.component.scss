@@ -45,7 +45,7 @@ h3 {
   padding: 0px;
 }
 .mat-card-image:first-child {
-  margin: 0px;
+  margin: auto;
 }
 
 mat-card-content {
@@ -78,6 +78,14 @@ mat-card-footer {
   max-width: 400px;
   flex-flow: wrap-reverse;
   margin: 15px;
+}
+
+.mat-card-title:not(:first-child), .mat-card-subtitle:not(:first-child) {
+  margin-top: 0px;
+}
+
+mat-card-title {
+  margin-bottom: 0px;
 }
 
 a {
@@ -117,6 +125,7 @@ mat-card {
 @media only screen and (max-width: 920px) {
   .section2 {
     display: block;
+    padding: 10px;
   }
 }
 @media only screen and (max-width: 820px) {
@@ -135,10 +144,6 @@ mat-card {
   }
   mat-card-title {
     font-size: 20px;
-  }
-  .computer-image {
-    margin: auto;
-    display: flex;
   }
 }
 

@@ -2,11 +2,11 @@
 
   <mat-card class="section1">
     <mat-card-title class="title" [innerHTML]="job.title"></mat-card-title>
-
     <mat-card class="dates">
-        <a target="_blank" *ngIf="job.companyLink" [attr.href]="job.companyLink">
-            <mat-card-title>{{job.company}}</mat-card-title></a>
+      <mat-card-title *ngIf="job.company" [innerHTML]="job.company"></mat-card-title>
+      <mat-card-title><a target="_blank" *ngIf="job.companyLink" [attr.href]="job.companyLink">{{job.companyWebsite}}</a></mat-card-title>
       <mat-card-title>{{job.dates}}</mat-card-title>
+      <mat-card-title>{{job.location}}</mat-card-title>
     </mat-card>
   </mat-card>
 
@@ -21,10 +21,10 @@
 
   </div>
 
-  <div class="section3" *ngIf="job.extra">
+  <div class="section3">
 
     <mat-card>
-      <mat-card-content [innerHTML]="job.extra"></mat-card-content>
+      <mat-card-content *ngIf="job.extra" [innerHTML]="job.extra"></mat-card-content>
       <app-logo-icons [ICONS]="job.icons"></app-logo-icons>
       <mat-card-footer *ngIf="job.code">
         <img class="github-image" alt="GitHub icon" src="https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2Fgit.png?alt=media&token=1991638f-3019-44fd-988e-72760a454844"/>
@@ -35,5 +35,5 @@
 
   </div>
 
-  <hr style="margin: 0px">
+  <hr>
 </div>

@@ -28,6 +28,7 @@
     "@fortawesome/angular-fontawesome": "0.8.x",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@ngmodule/material-carousel": "^0.6.0",
     "ang-readmore": "^0.0.5",
     "angular-material-expansion-panel": "^0.7.2",
     "blueimp-gallery": "^3.3.0",
@@ -39,6 +40,7 @@
     "rxjs": "~6.6.0",
     "safe-pipe": "^1.0.3",
     "tslib": "^2.0.0",
+    "xmlhttprequest-ssl": "^1.6.2",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
