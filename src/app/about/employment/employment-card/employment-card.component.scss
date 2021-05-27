@@ -144,11 +144,15 @@ mat-card {
   }
 }
 
+@media only screen and (max-width: 370px) {
+  .computer-image {
+    max-width: 250px;
+    }
+}
+
 @media only screen and (max-width: 320px) {
   mat-card-title {
     font-size: 18px;
   }
-  .computer-image {
-  max-width: 250px;
-  }
+
 }
