@@ -11,13 +11,14 @@
 }
 
 .image-container {
-  overflow: hidden;
-  width: 100%;
   height: auto;
-  max-width: 900px;
-  margin: auto;
-  position: relative;
-  }
+  max-width: 700px;
+  margin: 45px auto 0px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: center;
+}
 
 .contact{
   position: relative;
@@ -37,10 +38,13 @@ mat-card {
 }
 
 :host ::ng-deep .mat-card-image {
-  margin: auto;
+  margin: 0px auto;
   width: 100%;
-  max-width: 750px;
+  max-width: 205px;
   display: flex;
+}
+.mat-card-image:first-child {
+  margin-top: -6px;
 }
 
 mat-card-title {
@@ -65,11 +69,10 @@ a {
 }
 
 p {
-  max-width: 750px;
   display: block;
-  margin: 15px auto 0px;
+  margin: auto;
   text-align: justify;
-  padding: 15px;
+  padding: 0px 15px;
   font-size: 18px;
 }
 
@@ -85,12 +88,23 @@ a:hover {
   opacity: 0.7;
 }
 
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 650px) {
   .card-container {
     justify-content: center;
+    display: block;
+  }
+  .image-container {
     display: block;
   }
   .fa {
     padding: 10px;
   }
+  .mat-card-image {
+    max-width: 320px;
+    margin: 15px auto;
+    padding: 5px;
+  }
+  p {
+    max-width: 320px;
+}
 }

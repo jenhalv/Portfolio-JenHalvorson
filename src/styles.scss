@@ -9,7 +9,7 @@
     background: #d0d0d0;
   }
   25% {
-    background: #d0d0d0;;
+    background: #d0d0d0;
   }
   50% {
     background: #efefef;
@@ -90,6 +90,7 @@ p {
   display: flex;
   align-items: center;
   align-content: center;
+  justify-content: center;
 }
 
 hr {

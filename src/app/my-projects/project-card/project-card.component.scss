@@ -1,7 +1,7 @@
 div {
   max-width: 1100px;
   flex-wrap: wrap;
-  margin: 75px auto 0px;
+  margin: 25px auto 0px;
   justify-content: center;
   align-items: flex-start;
   display: flex;
@@ -63,7 +63,7 @@ a:hover {
   background-color: white;
   transition: background-color 2s, color 500ms;
   font-family: 'Tenor Sans', sans-serif;
-  min-height: 740px;
+  min-height: 765px;
 }
 
 mat-card:hover {

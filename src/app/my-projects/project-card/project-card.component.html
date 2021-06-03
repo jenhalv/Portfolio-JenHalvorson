@@ -1,6 +1,6 @@
 <div>
 
-  <mat-card *ngFor="let project of PROJECTS" [id]="project.projectId">
+  <mat-card *ngFor="let project of PROJECTS">
 
     <mat-card-header>
       <img mat-card-avatar class="logo-image" [src]="project.logo" [alt]="project.logoAlt"/>
@@ -23,6 +23,11 @@
             <img class="github-image" alt="GitHub icon" src="https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2Fgit.png?alt=media&token=1991638f-3019-44fd-988e-72760a454844"/>
             <mat-card-title>Repo/Source Code:<br>
             <a target="_blank" rel="noopener" [attr.href]="project.code">{{project.codeName}}</a></mat-card-title>
+          </mat-card-footer>
+          <mat-card-footer *ngIf="project.stack" class="header-less-tabs">
+            <img class="github-image" alt="Stackblitz icon" src="https://firebasestorage.googleapis.com/v0/b/portfolio-jenhalvorson.appspot.com/o/Icons%2Fstackblitz.png?alt=media&token=42e19877-20cf-4a76-9fa9-b74923bc72a7"/>
+            <mat-card-title>View Project:<br>
+            <a target="_blank" rel="noopener" [attr.href]="project.stack">{{project.codeName}}</a></mat-card-title>
           </mat-card-footer>
         </mat-tab>
 

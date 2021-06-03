@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { PROJECTS } from '../../projects';
-import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-project-card',
@@ -12,9 +11,8 @@ export class ProjectCardComponent implements OnInit {
 
   PROJECTS = [
     {
-      logo: 'assets/projects-photos/favicon_JH.png',
+      logo: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Favicons%2Ffavicon_JH.png?alt=media&token=058fc115-5b66-44ba-93f0-3a8525e06c97',
       logoAlt: 'My Portfolio favicon',
-      projectId: 'jen',
       title: 'Web Developer',
       subtitle: 'Personal Portfolio',
       subtitleLink: 'https://portfolio-jenhalvorson.web.app/',
@@ -62,10 +60,37 @@ export class ProjectCardComponent implements OnInit {
       ],
       code: 'https://github.com/jenhalv/Portfolio-JenHalvorson',
       codeName: 'Portfolio-JenHalvorson',
-      closed: false
     },
     {
-      logo: 'assets/projects-photos/favicon_TD.png',
+      logo: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jenhalvorson.appspot.com/o/Projects%2FTIGER.png?alt=media&token=64b5660e-3da7-4f0b-b332-e22436111ba2',
+      logoAlt: 'Rich Hill School District Tiger',
+      title: 'Email Template Designer',
+      subtitle: 'Rich Hill High School',
+      subtitleLink: 'https://email-template-html.firebaseapp.com/',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jenhalvorson.appspot.com/o/Projects%2FProject_Email.png?alt=media&token=f7b62c9b-a231-4205-aaf0-43daafc63a0d',
+      imageAlt: 'Rich Hill School District Email Template',
+      created: 'November 2020',
+      content: '<ul><li>I volunteered to create a unique email template for the local school district using Gmail™ Email Templates by cloudHQ.</li><li>Using the school’s color scheme and images from their website, I combined tables and clickable buttons to create an eye-appealing, easy-to-read newsletter.</li><li>The email template is responsive on both desktop & mobile devices.</li><li>Saving & sharing the template in Google Drive, I set up the school secretary\'s email to easily access the newsletter for weekly publication.',
+      icons: [
+        {
+          iconUrl: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2FHTML_B.png?alt=media&token=cfb4bc18-f0cf-4651-b010-43cf2deea19a',
+          iconAlt: 'HTML Icon'
+        },
+        {
+          iconUrl: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2FCSS.png?alt=media&token=00e06da8-1624-4c5c-8d6c-c2177f09c908',
+          iconAlt: 'CSS Icon'
+        },
+        {
+          iconUrl: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2Ffirebase_logo.png?alt=media&token=1dd8f086-db60-4b9b-ae3c-0186728f7247',
+          iconAlt: 'Firebase Icon'
+        },
+      ],
+      code: 'https://github.com/jenhalv/email-template-html',
+      codeName: 'Email-Template-HTML',
+      stack: 'https://stackblitz.com/edit/email-template-html',
+    },
+    {
+      logo: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Favicons%2Ffavicon_TD.png?alt=media&token=5978b86e-d5eb-4821-9c61-e272a0ed8be0',
       logoAlt: 'checkmark',
       title: 'Web Developer',
       subtitle: 'To Do List',
@@ -113,10 +138,9 @@ export class ProjectCardComponent implements OnInit {
       add: 'I really enjoy the camaraderie of the people that moderate, mentor, and attend the ngGirls workshops, and it motivates me to continue studying and creating fun apps in Angular.&nbsp;&nbsp;I was truly honored to have been offered the chance to mentor for the first time in April 2021 and always look forward to helping anyone in any way possible.&nbsp;&nbsp;In June 2019, I attended my first ngGirls conference & followed this same to do app tutorial.&nbsp;&nbsp;It amazes me how much I have learned since then!',
       addImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-jenhalvorson.appspot.com/o/Projects%2FToDo.jpg?alt=media&token=3cba5e11-f141-4f06-ae02-4e679b0e59b3',
       addImageAlt: 'To-do list image',
-      closed: false
     },
     {
-      logo: 'assets/projects-photos/favicon_bird.png',
+      logo: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Favicons%2Ffavicon_bird.png?alt=media&token=9ab5ba9c-fa78-49ee-a070-f8e468c48e01',
       logoAlt: 'bird',
       title: 'Web Developer',
       subtitle: 'Tour of Backyard Birds',
@@ -161,10 +185,9 @@ export class ProjectCardComponent implements OnInit {
       ],
       code: 'https://github.com/jenhalv/Tour-Of-Backyard-Birds-Angular-App',
       codeName: 'Tour-Of-Backyard-Birds-Angular-App',
-      closed: false
     },
     {
-      logo: 'assets/projects-photos/favicon_HH.png',
+      logo: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Favicons%2Ffavicon_HH.png?alt=media&token=03970777-2c91-4687-b557-e15be181ad17',
       logoAlt: 'Apple on books classroom favicon',
       title: 'Website Designer',
       subtitle: 'Mrs. Halvorson\'s Home',
@@ -191,19 +214,17 @@ export class ProjectCardComponent implements OnInit {
           iconAlt: 'Adobe Photoshop Icon'
         },
       ],
-      closed: false
     },
     {
-      logo: 'assets/projects-photos/favicon_PIF.png',
+      logo: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Favicons%2Ffavicon_PIF.png?alt=media&token=14e7dcf6-634f-4782-af07-99a3174c511d',
       logoAlt: 'Pictures in Focus favicon',
-      projectId: 'pictures',
       title: 'Website Designer',
       subtitle: 'Pictures in Focus',
       subtitleLink: 'http://picturesinfocus.weebly.com/',
       image: 'assets/projects-photos/Project_PIF1.png',
       imageAlt: 'Pictures in Focus Website',
       created: 'September 2004',
-      content: 'In 2004, I built my own photography business and personalized a small Weebly template to showcase a few of my favorite wedding & engagement pictures.  The site is straightforward and basic (I do not take pictures anymore professionally - just fun candid photos of kids, cats, and birds!).',
+      content: 'In 2004, I built my own photography business and personalized a small Weebly template to showcase a few of my favorite wedding & engagement pictures.&nbsp;&nbsp;The site is straightforward and basic (I do not take pictures anymore professionally - just fun candid photos of kids, cats, and birds!).',
       icons: [
         {
           iconUrl: 'https://firebasestorage.googleapis.com/v0/b/jen-s-pictures.appspot.com/o/Logo%20Icons%20-%20experience%2FHTML_B.png?alt=media&token=cfb4bc18-f0cf-4651-b010-43cf2deea19a',
@@ -226,12 +247,10 @@ export class ProjectCardComponent implements OnInit {
           iconAlt: 'Adobe Lightroom Icon'
         },
       ],
-      closed: false
     },
   ];
 
-  constructor( router: Router,
-               private route: ActivatedRoute, ) {
+  constructor() {
    }
 
   ngOnInit(): void {

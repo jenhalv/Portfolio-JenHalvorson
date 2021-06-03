@@ -62,8 +62,8 @@ export class EmploymentCardComponent implements OnInit {
     ],
     },
     {
-    title: 'SELF-EMPLOYED Freelance<br>Front End Developer',
-    description: '<ul><li>Independently generated an Angular SPA (Single Page Application) to display information about my family’s pecan farming business.</li><li>Google\'s Material Design specifications were referenced to ensure the best practices of user interface design.</li><li>Responsive layouts were created with the use of media queries, flexbox, and Angular\'s Material UI Library.</li><li>Generated multiple components to display content and added routing to navigate among different pages and sections.</li><li>Incorporated string interpolation/one-way data binding to output read-only data (for example, listing the recipes on the homepage), and event data binding/clickable methods were created for user events (for example, the “Read More” buttons on the homepage).</li></ul>',
+    title: 'SELF-EMPLOYED Freelance<br>Website Developer',
+    description: '<ul><li>Built an Angular SPA (Single Page Application) to display information about my family’s pecan farming business.</li><li>Referenced Google\'s Material Design specifications to ensure the best practices of user interface design.</li><li>Created responsive layouts with the use of media queries, flexbox, and Angular\'s Material UI Library.</li><li>Generated multiple components to display content and added routing to navigate among different pages and sections.</li><li>Incorporated string interpolation/one-way data binding to output read-only data (for example, listing the recipes on the homepage), and event data binding/clickable methods were created for user events (for example, the “Read More” buttons on the homepage).</li></ul>',
     company: 'Paul\'s Pecans, LLC',
     companyLink: 'https://paulspecans.com/',
     companyWebsite: 'PaulsPecans.com',

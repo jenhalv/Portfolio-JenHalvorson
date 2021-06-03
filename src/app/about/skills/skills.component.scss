@@ -3,10 +3,16 @@ mat-card {
   background: white;
   letter-spacing: 1px;
   border-radius: 0%;
+  padding: 20px;
+  margin: auto;
+}
+
+.mat-card>:first-child {
+  margin: 10px 0px;
 }
 
 .mat-card:not([class*=mat-elevation-z]) {
-  min-width: 500px;
+  min-width: 400px;
 }
 
 img {

@@ -1,24 +1,25 @@
 div {
-  margin: auto;
+  margin: 35px auto 85px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
+  max-width: 1030px;
 }
 
 mat-card {
   background-color: #efefef;
   transition: 2s ease;
   line-height: 22px;
-  margin: 45px 10px 100px 10px;
+  margin: auto;
   border-radius: 0% !important;
   box-shadow: 0px 0px 5px 3px rgb(0 0 0 / 20%) !important;
   align-items: center !important;
   flex-wrap: wrap !important;
   display: flex !important;
   justify-content: center !important;
-  max-width: 1500px;
+  max-width: 540px;
 }
 
 mat-card:hover {
@@ -34,15 +35,9 @@ mat-card-title {
   margin: 15px auto;
 }
 
-.mat-card>:first-child, .mat-card-content>:first-child {
-  margin: auto;
-  text-align: justify;
-  max-width: 650px;
-  padding-right: 30px;
-}
-
 a {
   font-weight: bold;
+  padding-bottom: 3px;
 }
 
 a:hover {
@@ -52,6 +47,7 @@ a:hover {
 
 p {
   display: block;
+  margin: auto;
 }
 
 section {
